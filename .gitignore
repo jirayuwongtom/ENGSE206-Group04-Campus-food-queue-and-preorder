@@ -1,0 +1,23 @@
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Microsoft Office temporary / backup files
+~$*
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Local editor settings
+.vscode/
+.idea/
+
+# Local exports or scratch files; keep final approved exports in final/
+*.log
+
+# Sensitive notes must never be committed
+.env
+secrets/
+private/
