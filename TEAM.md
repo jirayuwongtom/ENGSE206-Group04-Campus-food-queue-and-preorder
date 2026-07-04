@@ -6,12 +6,12 @@
 
 | รายการ | รายละเอียด |
 |---|---|
-| กลุ่ม | Group XX |
-| ชื่อโครงงาน | [ชื่อระบบภาษาไทย] / [English Project Name] |
-| Case Card | [หมายเลขและชื่อ Case Card ที่อาจารย์มอบหมาย] |
-| Repository URL | [วาง URL GitHub] |
-| ช่องทางสื่อสารหลัก | [เช่น LINE / Discord / Microsoft Teams] |
-| วันประชุมประจำ | [วัน/เวลา] |
+| กลุ่ม | Group 04 |
+| ชื่อโครงงาน | [ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย] / [Campus food queue and preorder] |
+| Case Card | [Case 04: ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย] |
+| Repository URL | [https://github.com/jirayuwongtom/ENGSE206-Group04-Campus-food-queue-and-preorder] |
+| ช่องทางสื่อสารหลัก | [Discord] |
+| วันประชุมประจำ | [เสาร์-อาทิตย์/18:00-22:00] |
 
 ## สมาชิกและบทบาท
 
@@ -19,10 +19,10 @@
 
 | รหัสนักศึกษา | ชื่อ-นามสกุล | บทบาทหลัก | รับผิดชอบเริ่มต้น | หลักฐานการทำงานที่คาดหวัง |
 |---|---|---|---|---|
-| [ID] | [ชื่อ] | Team Coordinator | ประสานงาน/ติดตามความคืบหน้า | meeting notes, worklog |
-| [ID] | [ชื่อ] | Requirements Lead | elicitation / backlog / SRS | requirement docs |
-| [ID] | [ชื่อ] | Design Lead | diagrams / architecture / detailed design | design docs, diagrams |
-| [ID] | [ชื่อ] | UX & Evidence Lead | prototype / usability / evidence | evidence, prototype |
+| [68543210022-8] | [นายจิรายุ วงศ์ต่อม] | Team Coordinator | ประสานงาน/ติดตามความคืบหน้า | meeting notes, worklog |
+| [68543210069-9] | [นายศักดิ์ณรงค์ นำนนท์] | Requirements Lead | elicitation / backlog / SRS | requirement docs |
+| [68543210064-0] | [นายธนภัทร ชัยทอง] | Design Lead | diagrams / architecture / detailed design | design docs, diagrams |
+| [68543210064-0] | [นายธนภัทร ชัยทอง] | UX & Evidence Lead | prototype / usability / evidence | evidence, prototype |
 
 ## กติกาทีม
 
