@@ -6,4 +6,4 @@
 |---|---:|---|---|---|---|---:|---|
 | [04/07/2569] | 1 | [จิรายุ วงศ์ต่อม] | [Update case card and team information in documentation] | `CASE_CARD.md & TEAM.md` | [commit hash / link] | [3] hr | Done |
 | [04/07/2569] | 1 | [ศักดิ์ณรงค์ นำนนท์] | [Commit problem-brief-v0.1] | `docs/01-problem-brief-v0.1.md` | [commit hash / link] | [3] hr | Done |
-| [date] | 1 | [ชื่อ] | [ทำอะไร] | `docs/01-...` | [commit hash / link] | [x] hr | Done / In progress |
+| [04/07/2569] | 1 | [ธนภัทร ชัยทอง] | [Edit And Commit Team Worklog] | `docs/01-team-worklog.md` | [commit hash / link] | [3] hr | Done |
