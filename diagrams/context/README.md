@@ -1,10 +1,6 @@
-# Context Diagrams
+# System Context Diagram
 
-ใส่ stakeholder map และ system context diagram
+- **Source of truth:** `System Context Diagram.drawio`
+- **Preview/export:** `System Context Diagram.png`
 
-## Checklist
-
-- [ ] มี source file ที่แก้ไขได้
-- [ ] มี PNG/PDF export สำหรับใช้ในเอกสาร
-- [ ] ชื่อไฟล์สื่อถึง purpose
-- [ ] เชื่อมโยงกับ requirement/design document
+เปิด `.drawio` ใน Draw.io เพื่อแก้ชื่อ stakeholder, system boundary หรือ data flow ของ Case ของกลุ่ม แล้ว export PNG ใหม่ทุกครั้งก่อนส่งงาน
