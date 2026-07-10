@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="f8V931Ct0gPv5vbCzQwY">
+    <mxGraphModel dx="3423" dy="1907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=26;fontStyle=1;fontColor=#168A87;" value="Campus food queue and preorder — Stakeholder Map" vertex="1">
+          <mxGeometry height="45" width="1000" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="matrix" parent="1" style="shape=rectangle;whiteSpace=wrap;html=1;fillColor=#F6F8FB;strokeColor=#B8C9D9;strokeWidth=2;" value="" vertex="1">
+          <mxGeometry height="640" width="1200" x="240" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="vline" parent="1" style="shape=rectangle;fillColor=#B8C9D9;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="590" width="2" x="840" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="hline" parent="1" style="shape=rectangle;fillColor=#B8C9D9;strokeColor=none;" value="" vertex="1">
+          <mxGeometry height="2" width="1160" x="250" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="highinf" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#123B6D;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Influence&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="120" x="800" y="880" as="geometry" />
+        </mxCell>
+        <mxCell id="highint" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=16;fontColor=#123B6D;" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;&lt;b&gt;Interest&lt;/b&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="40" width="100" x="80" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="q1" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=17;fontStyle=1;fontColor=#168A87;" value="Manage closely&amp;nbsp;&lt;br&gt;High interest / High influence" vertex="1">
+          <mxGeometry height="50" width="360" x="900" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="q2" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=17;fontStyle=1;fontColor=#7155B8;" value="Keep satisfied&#xa;Low interest / High influence" vertex="1">
+          <mxGeometry height="50" width="360" x="920" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="q3" parent="1" style="text;html=1;fontSize=17;fontStyle=1;align=left;" value="&lt;div style=&quot;&quot;&gt;&lt;span style=&quot;color: light-dark(rgb(29, 111, 195), rgb(37, 102, 168));&quot;&gt;Keep informed &lt;br&gt;High interest / Lower influence&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="400" x="310" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="q4" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=17;fontStyle=1;fontColor=#E58327;" value="Monitor&#xa;Lower interest / lower influence" vertex="1">
+          <mxGeometry height="50" width="340" x="280" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8F4;strokeColor=#168A87;strokeWidth=3;fontColor=#168A87;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="พนักงานร้าน&lt;br&gt;รับออเดอร์ชัดเจนและจัดลำดับงานได้" vertex="1">
+          <mxGeometry height="100" width="300" x="970" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="owner" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8F4;strokeColor=#168A87;strokeWidth=3;fontColor=#168A87;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="เจ้าของร้าน&lt;br&gt;เห็นภาระงานและลดออเดอร์ผิดพลาด" vertex="1">
+          <mxGeometry height="100" width="300" x="970" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="areamanager" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F2EEFF;strokeColor=#7155B8;strokeWidth=3;fontColor=#7155B8;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="ผู้ดูแลพื้นที่อาหาร&lt;br&gt;ลดความแออัดและข้อร้องเรียน" vertex="1">
+          <mxGeometry height="100" width="300" x="970" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="student" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF4FF;strokeColor=#1D6FC3;strokeWidth=3;fontColor=#1D6FC3;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="&lt;span style=&quot;color: rgb(29, 111, 195);&quot;&gt;นักศึกษา / ลูกค้า&lt;br&gt;สั่งง่าย รู้เวลารอ และรับของถูกต้อง&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="300" x="360" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Zi1sw0OFDrrBLo1RNdL6-1" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="840" as="sourcePoint" />
+            <mxPoint x="200" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Zi1sw0OFDrrBLo1RNdL6-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value=" ">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="200" y="840" as="sourcePoint" />
+            <mxPoint x="1440" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
