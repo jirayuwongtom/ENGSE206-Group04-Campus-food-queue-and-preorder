@@ -1,0 +1,116 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="K26gqtymiq3zS71bo0Jo">
+    <mxGraphModel dx="2054" dy="1092" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontSize=26;fontStyle=1;fontColor=#123B6D;" value="Campus food queue and preorder — System Context Diagram" vertex="1">
+          <mxGeometry height="45" width="1000" x="80" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="system" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E8F8F4;strokeColor=#168A87;strokeWidth=3;fontColor=#168A87;fontStyle=1;fontSize=22;align=center;verticalAlign=middle;" value="&lt;span style=&quot;font-size: 26px; text-align: left; white-space: nowrap;&quot;&gt;Campus food queue and preorder System&lt;/span&gt;&lt;div&gt;ดูคิว • จัดลำดับ • แจ้งสถานะ • จัดการออเดอร์&lt;span style=&quot;font-size: 26px; text-align: left; white-space: nowrap;&quot;&gt;&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="210" width="540" x="620" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="student" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF4FF;strokeColor=#1D6FC3;strokeWidth=2;fontColor=#123B6D;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="นักศึกษา / ลูกค้า" vertex="1">
+          <mxGeometry height="110" width="310" x="90" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="staff" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EAF4FF;strokeColor=#1D6FC3;strokeWidth=2;fontColor=#123B6D;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="พนักงานร้าน" vertex="1">
+          <mxGeometry height="110" width="310" x="90" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="owner" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E8;strokeColor=#E58327;strokeWidth=2;fontColor=#123B6D;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="เจ้าของร้าน" vertex="1">
+          <mxGeometry height="110" width="310" x="1370" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="notice" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF3E8;strokeColor=#E58327;strokeWidth=2;fontColor=#123B6D;fontStyle=1;fontSize=16;align=center;verticalAlign=middle;" value="&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font color=&quot;#1f2328&quot; face=&quot;Mona Sans VF, -apple-system, BlinkMacSystemFont, Segoe UI, Noto Sans, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji&quot;&gt;&lt;span style=&quot;font-weight: 400;&quot;&gt;ผู้ดูแลพื้นที่อาหาร&lt;/span&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="310" x="1370" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="student" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="system" value="สั่งอาหาร / ยกเลิก / แก้ไข">
+          <mxGeometry relative="1" x="0.1429" y="-15" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="490" y="313" />
+              <mxPoint x="490" y="443" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.1;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="student" value="ดูคิว / เวลารอ / สถานะออเดอร์">
+          <mxGeometry relative="1" x="-0.1667" y="-20" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="580" y="411" />
+              <mxPoint x="580" y="258" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="staff" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="system" value="รับออเดอร์ / อัปเดตสถานะ (พร้อมรับ/หมด)">
+          <mxGeometry relative="1" x="-0.0119" y="40" as="geometry">
+            <mxPoint y="1" as="offset" />
+            <Array as="points">
+              <mxPoint x="480" y="748" />
+              <mxPoint x="480" y="548" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=0;exitY=0.9;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="staff" value="รายการคิว / รายละเอียดคำสั่งซื้อ">
+          <mxGeometry relative="1" x="-0.1429" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="560" y="579" />
+              <mxPoint x="560" y="803" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.1;exitDx=0;exitDy=0;" value="ดูภาระงาน / สถานะออเดอร์">
+          <mxGeometry relative="1" x="0.0588" y="15" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1240" y="411" />
+              <mxPoint x="1240" y="260" />
+            </Array>
+            <mxPoint x="1370" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="system" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.9;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;align=left;" target="notice" value="&lt;h6&gt;&lt;br&gt;&lt;/h6&gt;">
+          <mxGeometry relative="1" x="0.1329" y="-35" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1265" y="579" />
+              <mxPoint x="1265" y="743" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SSYDIZpt6wqBwVZHBnYd-3" connectable="0" parent="e9" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="รายงานข้อร้องเรียน" vertex="1">
+          <mxGeometry relative="1" x="0.1011" y="1" as="geometry">
+            <mxPoint x="-16" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D1CjBu2hbJubJUdAafP_-4" edge="1" parent="1" source="notice" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=-0.006;exitY=0.127;exitDx=0;exitDy=0;entryX=1;entryY=0.619;entryDx=0;entryDy=0;align=left;exitPerimeter=0;entryPerimeter=0;" target="system" value="&lt;h6&gt;&lt;br&gt;&lt;/h6&gt;">
+          <mxGeometry relative="1" x="0.1329" y="-35" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1310" y="674" />
+              <mxPoint x="1310" y="520" />
+            </Array>
+            <mxPoint x="1250" y="750" as="sourcePoint" />
+            <mxPoint x="1460" y="859" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D1CjBu2hbJubJUdAafP_-7" connectable="0" parent="D1CjBu2hbJubJUdAafP_-4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="ข้อร้องเรียน" vertex="1">
+          <mxGeometry relative="1" x="-0.0935" y="2" as="geometry">
+            <mxPoint x="2" y="12" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SSYDIZpt6wqBwVZHBnYd-2" edge="1" parent="1" source="owner" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#123B6D;fontSize=12;fontColor=#18324B;labelBackgroundColor=#FFFFFF;exitX=-0.009;exitY=0.808;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.238;entryDx=0;entryDy=0;entryPerimeter=0;" target="system" value="จัดการข้อมูลร้าน">
+          <mxGeometry relative="1" x="-0.1232" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="1367" y="310" />
+              <mxPoint x="1320" y="310" />
+              <mxPoint x="1320" y="440" />
+            </Array>
+            <mxPoint x="1220" y="491" as="sourcePoint" />
+            <mxPoint x="1430" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
