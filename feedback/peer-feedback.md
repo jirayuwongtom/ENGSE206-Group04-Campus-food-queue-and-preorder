@@ -1,11 +1,7 @@
 # Peer Feedback Summary
 
-| Date | Reviewer | Artefact | Strengths | Questions / Suggestions | Action Taken |
-|---|---|---|---|---|---|
-| 2026-07-08 | นายศักดิ์ณรงค์ นำนนท์ (Requirements Lead) | docs/01-problem-brief-v0.1.md | ระบุปัญหาหลักชัดเจน ว่ากรณีศึกษาเกี่ยวกับคิว ลูกค้ารอไม่รู้เวลา และออเดอร์ผิดพลาด | มี stakeholder "เจ้าของร้าน" แต่ไม่ชัดว่าระบบช่วย analytics/รายรับอย่างไร ควรระบุ business value ให้เห็นชัด | เพิ่มบรรทัดระบุ business value สำหรับเจ้าของร้าน: "สามารถดูสถิติความพอใจและลดเวลาให้บริการรายเฉพาะ" |
-| 2026-07-09 | นายธนภัทร ชัยทอง (Design Lead) | diagrams/use-case-v1.drawio | ใช้ Use Case diagram มาตรฐาน แยก actor ครบ 4 คน และ use case พอดี | ยังไม่ชัดว่า "Cancel Order" ได้ตั้งแต่ไหน - UC-05 ครอบหลายสถานะหรือ 1 สถานะเท่านั้น | สร้าง UC-05.1 "Cancel before confirmation" และ UC-05.2 "Cancel before preparation" เพื่อให้ชัดเจน |
-| 2026-07-09 | นายจิรายุ วงศ์ต่อม (Team Coordinator) | design/12-ux-ui-prototype-v0.2.fig | Wireframe ชัดเจน สี layout แสดงสถานะรอ จำนวนคน เวลาโดยประมาณ ได้ดี | ในหน้า "Menu" มีปุ่ม "จองไว้ก่อน" แต่ requirements ยังไม่ได้พูดถึง pre-order ควรเพิ่ม FR ใหม่ หรือลบปุ่มนี้ | เพิ่ม FR-11 "Pre-order items 24 hrs in advance" ในเอกสาร requirements backlog และปรับ mockup ให้ตรง |
-| 2026-07-10 | นายศักดิ์ณรงค์ นำนนท์ (Requirements Lead) | design/11-conceptual-architecture-v0.1.md | Architecture ง่ายและชัดเจน โยงการ Queue Management Service กับ Order Service ได้ดี | Constraint บอกว่า "รองรับเมนูหมด" แต่ architecture ไม่บอกว่า Menu Service สื่อกับ Queue Service อย่างไร | ขอ Design Lead ปรับ API contract เพื่อ "check inventory before accept order" เพิ่มลูกศรการเรียก Inventory Service |
-| 2026-07-11 | นายธนภัทร ชัยทอง (UX & Evidence Lead) | evidence/week-07-usability-test.md | บันทึกการ test กับ 5 นักศึกษา ได้ insights ว่า button size ควรใหญ่กว่า และ usability ดี | ไม่ได้ test กับ staff view และไม่ชัดว่าบัญชีจำลองมี password ชั่วคราวหรือเปล่า ต้องมี evidence เพิ่มเติม | เพิ่มการ test staff view ด้วย 2 นักศึกษา และเก็บบันทึก screen recording + password ใน confidential folder |
-| 2026-07-12 | นายจิรายุ วงศ์ต่อม (Team Coordinator) | docs/08-validation-traceability.md | Traceability matrix ครบหมด FR-01 ถึง FR-10, NFR-01 ถึง NFR-05 และโยงไปถึง test case ได้ดี | มี test case TC-008 (ยกเลิกช่วงเตรียม) ไม่ pass และไม่ชัดว่า FR-04 "Cancel" มีเงื่อนไขอะไรบ้าง | คุยกับ Requirements Lead ว่า FR-04 "Cancel" ต้องมีเงื่อนไข 3 states แล้วทำ change log ในไฟล์ docs/09-change-history.md |
-
+| Date | Reviewer | Role | Artefact | Strengths | Questions / Suggestions | Action Taken |
+|---|---|---|---|---|---|---|
+| 2026-07-04 | ธนภัทร ชัยทอง | Design Lead | docs/01-problem-brief-v0.1.md | ระบุปัญหาหลักชัดเจน แยก Facts/Assumptions/Open Questions ได้ดี | ควรขยายคำอธิบาย Initial User Needs และเพิ่มสัดส่วน Out of Scope | ทีมจะปรับปรุงใน v0.2 |
+| 2026-07-08 | จิรายุ วงศ์ต่อม | Team Coordinator | docs/02-stakeholder-context-scope.md (draft) | Stakeholder map ครบทั้ง 4 role หลัก สอดคล้องกับ pain points | เพิ่มรายละเอียด Influence/Interest matrix ให้ชัดเจนกว่า | ปรับ Stakeholder Inventory Table ให้แสดง influence ได้ชัดกว่า |
+| 2026-07-10 | ศักดิ์ณรงค์ นำนนท์ | Requirements Lead | diagrams/context/SystemContextDiagram.drawio | System boundary ชัดเจน Data flows ครอบคลุมหลัก | ตรวจสอบ data flows ที่ขาดหายไป เช่น feedback จาก ผู้ดูแลพื้นที่ | เติม feedback loop ในแผนลาสุด |
