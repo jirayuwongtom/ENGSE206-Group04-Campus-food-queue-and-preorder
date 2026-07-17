@@ -1,50 +1,46 @@
-# 03 — Elicitation Plan and Interview Guide
+# 03 — Elicitation Plan
 
-> **Week 3 deliverable**
+> Week 03 | Team: [Team XX] | Case: [ID — Title]
 
-## 1. วัตถุประสงค์การเก็บความต้องการ
+## 1. Inputs from Week 02
 
-- EO-01: [ต้องการเรียนรู้อะไรจาก stakeholder]
-- EO-02: [กรอก]
+- Problem Brief: [`01-problem-brief-v0.1.md`](01-problem-brief-v0.1.md)
+- Stakeholder/Context/Scope: [`02-stakeholder-context-scope.md`](02-stakeholder-context-scope.md)
 
-## 2. วิธีการเก็บข้อมูล
-
-| Method | Stakeholder | สิ่งที่ต้องการค้นหา | ช่วงเวลา | ผู้รับผิดชอบ | Output |
-|---|---|---|---|---|---|
-| Interview / Observation / Workshop | [Role] | [กรอก] | [date] | [ชื่อ] | notes / photo / summary |
-
-## 3. Interview / Workshop Guide
-
-### Opening Script
-
-[คำกล่าวเปิดที่สุภาพ อธิบายวัตถุประสงค์และการขออนุญาตบันทึกข้อมูล]
-
-### Questions
-
-| Q-ID | คำถาม | เหตุผลที่ถาม | ต้องการหลักฐานอะไร |
+| OQ ID | Open Question | Impact if unresolved | Candidate source |
 |---|---|---|---|
-| Q-01 | [กรอก] | [กรอก] | [กรอก] |
-| Q-02 | | | |
+| OQ-01 | | | |
 
-### Closing Questions
+## 2. Elicitation Objectives
 
-- มีปัญหาหรือความต้องการอื่นที่ยังไม่ได้พูดถึงหรือไม่?
-- หากแก้ได้เพียงสิ่งเดียว คุณอยากให้แก้อะไรก่อน เพราะอะไร?
+| EO ID | Objective: what must be learned | Related OQ | Decision/use | Expected evidence / exit criterion |
+|---|---|---|---|---|
+| EO-01 | | | | |
 
-## 4. Consent / Privacy Plan
+## 3. Plan
 
-- ไม่ใช้ชื่อจริงหรือข้อมูลที่ระบุตัวบุคคลได้ในเอกสารส่งงาน
-- ถ้าถ่ายภาพ ให้หลีกเลี่ยงใบหน้าและข้อมูลส่วนบุคคล
-- ใช้ข้อมูลจำลองเมื่อจำเป็น
+| EO | Stakeholder/source | Technique + rationale | Evidence to record | Owner/time | Risk/mitigation | Exit criterion |
+|---|---|---|---|---|---|---|
+| EO-01 | | Interview / observation / document / workshop | | | | |
 
-## 5. Elicitation Risks
+## 4. Privacy and Responsible AI
 
-| Risk | Mitigation |
-|---|---|
-| [เช่น stakeholder ไม่ว่าง] | [เช่น ใช้ role-play ตามที่อาจารย์กำหนด] |
+- Data that must not be collected:
+- Consent/opening statement:
+- How roles will be anonymized:
+- AI use permitted:
+- Human verification plan:
+
+## 5. Team Roles
+
+| Member | Workshop role | Responsibility/evidence |
+|---|---|---|
+| | | |
 
 ## 6. Definition of Done
 
-- [ ] มีวิธีเก็บข้อมูลที่เหมาะกับอย่างน้อย 2 stakeholder role
-- [ ] มีคำถามที่ช่วยค้นหา pain points, workflow, exception และ priority
-- [ ] มีผู้รับผิดชอบและ schedule
+- [ ] 3–5 high-impact OQs
+- [ ] EO–OQ–evidence–decision linkage
+- [ ] appropriate technique and stakeholder rationale
+- [ ] owner/time/risk/exit criteria
+- [ ] privacy/AI plan and team roles
