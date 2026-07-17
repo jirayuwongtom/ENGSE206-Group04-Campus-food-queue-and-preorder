@@ -1,6 +1,6 @@
 # 03 — Elicitation Plan
 
-> Week 03 | Team: [Team XX] | Case: [ID — Title]
+> Week 03 | Team: [Team 04] | Case: [04]
 
 ## 1. Inputs from Week 02
 
@@ -18,32 +18,40 @@
 
 | EO ID | Objective: what must be learned | Related OQ | Decision/use | Expected evidence / exit criterion |
 |---|---|---|---|---|
-| EO-01 | | | | |
+| EO-01 | หาระยะเวลา (Cut-off time) และเงื่อนไขที่ร้านยอมให้ลูกค้ายกเลิก/แก้ไขออเดอร์ได้โดยไม่ขาดทุน | OQ-01 | ใช้สร้าง Validation rule ห้ามกดยกเลิกในระบบเมื่อถึงสถานะที่กำหนด | กฎเกณฑ์ของร้าน หรือตัวอย่างเหตุการณ์ที่ร้านยอมให้ยกเลิกได้ |
+| EO-02 | หากระบวนการทำงาน (Workflow) และการแบ่งหน้าที่ของพนักงานหน้าเตาในช่วงเวลาเร่งด่วน | OQ-02 | ใช้กำหนด Role/Permission และออกแบบ UI ให้เหมาะสมกับคนที่มีหน้าที่น้อยที่สุด | ลำดับการทำอาหารจริง และระบุตัวบุคคลที่ทำหน้าที่เรียกคิว |
+| EO-03 | หาวิธีปฏิบัติและข้อตกลงในการสื่อสารเมื่อวัตถุดิบหมดกะทันหัน | OQ-03 | ใช้สร้าง Exception flow (กรณีสินค้าหมด) ในระบบ | เหตุการณ์ตัวอย่างที่เคยเกิดขึ้น และวิธีที่ร้านใช้รับมือ |
+| EO-04 | รวบรวมรายการข้อมูลที่จำเป็นต่อการตัดสินใจสั่งอาหารและการรอคิวของลูกค้า | OQ-04 | ใช้จัดลำดับความสำคัญของข้อมูลบน User Interface ฝั่งลูกค้า | รายการข้อมูลที่ลูกค้าต้องการเห็น เรียงตามลำดับความสำคัญ |
 
 ## 3. Plan
 
 | EO | Stakeholder/source | Technique + rationale | Evidence to record | Owner/time | Risk/mitigation | Exit criterion |
 |---|---|---|---|---|---|---|
-| EO-01 | | Interview / observation / document / workshop | | | | |
+| EO-01 | เจ้าของร้าน | Interview: เพื่อทำความเข้าใจนโยบายและเหตุผลทางธุรกิจ | กฎข้อบังคับเรื่องการยกเลิก/คืนเงิน | [จิรายุ] / Week 04 | เจ้าของร้านอาจไม่มีกฎตายตัว / ถามถึงเกณฑ์ขั้นต่ำที่รับได้ | ได้เงื่อนไข Cut-off time ชัดเจน 1 กฎ |
+| EO-02 | พนักงานร้าน | Observation + Interview: เพื่อดูสภาพหน้างานจริงว่ายุ่งแค่ไหนและใครว่างกดหน้าจอ | ขั้นตอนการทำงาน (Step log) | [ธนภัทร] / Week 04 | พนักงานยุ่งจนไม่มีเวลาคุย / ใช้วิธีจำลองสถานการณ์แทน | ได้ Workflow ตั้งแต่รับออเดอร์จนถึงส่งอาหาร |
+| EO-03 | พนักงาน + ลูกค้า | Role-play / Interview: จำลองเหตุการณ์จริงเพื่อดูวิธีแก้ไขปัญหาเฉพาะหน้า | วิธีการแจ้งเตือนและการเสนอทางเลือก | [ศักดิ์ณรงค์] / Week 04 | ผู้ใหัข้อมูลอาจตอบแบบโลกสวย (อุดมคติ) / ให้เล่าเหตุการณ์แย่ๆ ที่เคยเจอจริง | ได้แนวทางรับมือสินค้าหมด 1-2 วิธี |
+| EO-04 | นักศึกษา/ลูกค้า | Interview: เพื่อเข้าใจพฤติกรรมและความต้องการโดยตรง | Pain point และ ข้อมูลที่อยากรู้ | [จิรายุ] / Week 04 | ลูกค้าอยากได้ข้อมูลทุกอย่าง / บังคับให้เลือกเฉพาะ 3 สิ่งที่สำคัญที่สุด | ได้รายการข้อมูล 3 อันดับแรกที่ต้องมีบนจอ |
 
 ## 4. Privacy and Responsible AI
 
-- Data that must not be collected:
-- Consent/opening statement:
-- How roles will be anonymized:
-- AI use permitted:
-- Human verification plan:
+- Data that must not be collected : ข้อมูลสุขภาพ (เช่น การแพ้อาหาร), ชื่อนามสกุลจริง, เบอร์โทรศัพท์ส่วนตัว และข้อมูลทางการเงิน
+- Consent/opening statement : "สวัสดีครับ กิจกรรมนี้เป็นส่วนหนึ่งของรายวิชาเพื่อออกแบบระบบคิว ข้อมูลที่คุณให้จะถูกนำไปใช้เพื่อการศึกษาเท่านั้น จะไม่มีการบันทึกข้อมูลส่วนบุคคล หากมีคำถามไหนไม่สะดวกตอบ สามารถข้ามได้เลยครับ"
+- How roles will be anonymized : ใช้นามแฝง เช่น "พนักงาน A", "ลูกค้า B" หรือ "เจ้าของร้าน C"
+- AI use permitted : อนุญาตให้ใช้ AI ในการเป็น "ตัวแทน (Proxy)" เพื่อซ้อมบทสัมภาษณ์ และใช้ช่วยตรวจสอบ Bias ของคำถาม
+- Human verification plan : ข้อมูลที่ได้จาก AI จะต้องติดป้ายว่าเป็นเพียง Simulation และนำไปตรวจสอบความสมเหตุสมผลกับบริบทของโรงอาหารมหาวิทยาลัยจริง
 
 ## 5. Team Roles
 
 | Member | Workshop role | Responsibility/evidence |
 |---|---|---|
-| | | |
+| [นายจิรายุ วงศ์ต่อม] | Facilitator / Lead Interviewer | ควบคุมเวลา สัมภาษณ์หลัก และรัน Role-play |
+| [นายธนภัทร ชัยทอง] | Evidence controller / Probe Interviewer | ถามเจาะลึก และระบุ Evidence ID กลับไปยัง OQ |
+| [นายศักดิ์ณรงค์ นำนนท์] | Note-taker / Quality Reviewer | จดบันทึกข้อเท็จจริง และคอยเตือนหากมีคำถามชี้นำ |
 
 ## 6. Definition of Done
 
-- [ ] 3–5 high-impact OQs
-- [ ] EO–OQ–evidence–decision linkage
-- [ ] appropriate technique and stakeholder rationale
-- [ ] owner/time/risk/exit criteria
-- [ ] privacy/AI plan and team roles
+- [X] 3–5 high-impact OQs
+- [X] EO–OQ–evidence–decision linkage
+- [X] appropriate technique and stakeholder rationale
+- [X] owner/time/risk/exit criteria
+- [X] privacy/AI plan and team roles
