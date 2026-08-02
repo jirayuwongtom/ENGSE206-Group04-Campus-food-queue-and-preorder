@@ -1,32 +1,40 @@
-# 04 — Evidence Log and Issue List
+# 04 — Evidence, Conflict, Negotiation and Requirement Candidates
 
-> **Week 4 deliverable**  
-> เก็บข้อเท็จจริงและสิ่งที่ตีความแยกกันอย่างชัดเจน
+> Week 04 | **AI role output is simulation evidence, not an approved real-world fact.**
 
-## 1. Evidence Log
+## 1. Evidence Tags
 
-| E-ID | Date | Method | Stakeholder/Source | Observation / Quote / Fact | Interpretation | Related Requirement / Open Question | Evidence File |
+`CF` case fact · `SN` simulated need · `CT` constraint/rule · `OP` opinion · `AS` assumption · `PS` proposed solution · `OQ` open question
+
+## 2. Evidence Log
+
+| E-ID | Source/role/session | Tag | Statement / observed event | Context | Confidence + reason | Related/conflicting E-ID | Follow-up/owner |
 |---|---|---|---|---|---|---|---|
-| E-01 | [date] | interview / workshop | [Role] | [ข้อเท็จจริง] | [การตีความ] | [FR-/OQ-] | `../evidence/week-04/...` |
+| E-01 | | CF/SN/CT/OP/AS/PS/OQ | | | Low/Med/High | | |
 
-## 2. Issue List / ความขัดแย้งหรือประเด็นที่ต้องตัดสินใจ
+## 3. Issue and Conflict List
 
-| Issue ID | ประเด็น | ฝ่ายที่เกี่ยวข้อง | ทางเลือก | การตัดสินใจ/สถานะ | Rationale |
+| ID | Evidence-linked issue/conflict | Parties + authority | Positions | Interests/constraints | Status |
 |---|---|---|---|---|---|
-| IS-01 | [กรอก] | [กรอก] | A / B | Open / Decided | [กรอก] |
+| C-01 | | | | | Open |
 
-## 3. Negotiation Record
+## 4. Negotiation Record
 
-| Date | Participants | Topic | Agreed outcome | Follow-up |
-|---|---|---|---|---|
-| [date] | [names/roles] | [กรอก] | [กรอก] | [กรอก] |
+| Conflict | Options considered | Evaluation criteria | Decision/status | Rationale + evidence | Follow-up |
+|---|---|---|---|---|---|
+| C-01 | A / B / C | value/risk/fairness/feasibility | Provisional / Unresolved / Escalate | | |
 
-## 4. New / Revised Insights
+## 5. Requirement Candidates
 
-- [Insight 1]
-- [Insight 2]
+| RC ID | Candidate statement | Rationale | Evidence E-ID | Status | Confidence | Verification/follow-up |
+|---|---|---|---|---|---|---|
+| RC-01 | | | | Candidate / Provisional | | |
 
-## 5. Links to Evidence Files
+## 6. Quality Check
 
-- [Workshop notes](../evidence/week-04/README.md)
-- [Meeting minutes](../project-management/meeting-minutes/README.md)
+- [ ] Statement and team interpretation are separated.
+- [ ] Every finding has source/tag/context/confidence.
+- [ ] Contradictions remain visible; no silent merging.
+- [ ] Conflict includes interests, authority and ≥2 options.
+- [ ] RCs cite E-IDs and do not claim real-world approval.
+- [ ] No personal/confidential data; AI use logged.
