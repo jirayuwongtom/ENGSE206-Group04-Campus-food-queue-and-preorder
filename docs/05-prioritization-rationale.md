@@ -1,4 +1,4 @@
-# 05 — Prioritization Rationale: Campus Resource Booking
+# 05 — Prioritization Rationale: Campus Food Queue and Preorder
 
 > ไฟล์นี้อธิบาย “ทำไม” requirement แต่ละข้อจึงได้ priority ตามที่กำหนด เพื่อให้นักศึกษาเห็นว่าการจัดลำดับไม่ใช่การเดาหรือเลือกตามความชอบ
 
@@ -11,34 +11,27 @@
 3. **Urgency:** ต้องใช้ใน workflow รุ่นแรกหรือยังรอได้
 4. **Dependency:** ต้องรอ policy, authority, IT integration หรือข้อมูลเพิ่มหรือไม่
 
-## 2. เหตุผลราย requirement
+## 2. เหตุผลราย Requirement
 
 | Req ID | Priority | เหตุผลหลัก | Trade-off / Dependency |
 |---|---|---|---|
-| FR-SCRB-01 | Must | ถ้าไม่มีการค้นหาและดูสถานะก่อนยื่นคำขอ ระบบจะไม่แก้ปัญหาจองซ้ำและตรวจสถานะยาก | ต้องระบุข้อมูลขั้นต่ำที่ต้องแสดง แต่ไม่ต้องออกแบบ UI ใน Week05 |
-| FR-SCRB-02 | Should | Draft ช่วยลดงานกรอกซ้ำและลดการถามกลับ | ต้องกำหนด lifetime/visibility ของ draft ก่อนเป็น rule สมบูรณ์ |
-| BR-SCRB-01 | Must | ข้อมูลขั้นต่ำเป็น gate สำคัญก่อนเจ้าหน้าที่พิจารณา | ยังต้องถามเจ้าหน้าที่ว่าข้อมูลใด “ขั้นต่ำจริง” |
-| FR-SCRB-03 | Should | Exception สำคัญต่อกรณีเรียน/กิจกรรมพิเศษ แต่ห้าม auto override โดยไม่มี authority | ต้องมี authority matrix และ communication rule |
-| FR-SCRB-04 | Could | event record เรื่อง cancel/no-show มีคุณค่า แต่ policy ยังไม่ชัด | penalty, quota, duration ต้อง hold |
-| FR-SCRB-05 | Should | การส่งมอบ/รับคืนมี fact รองรับและช่วย accountability | รูปถ่ายทุกครั้งยังไม่ควรถูกบังคับ เพราะเป็น proposed solution และมี privacy concern |
-| FR-SCRB-06 | Should | การแจ้งเตือนลดความไม่แน่นอน แต่ channel/timing ยังไม่ยืนยัน | ต้องแยก event ที่ต้องแจ้งจากช่องทางแจ้ง |
-| NFR-SCRB-01 | Must | data minimization เป็นข้อจำกัดคุณภาพ/ความปลอดภัยที่ครอบ requirement หลายข้อ | ต้องให้ IT/policy owner ยืนยัน boundary |
-| ISSUE-SCRB-01 | Won't yet | ไม่มีหลักฐานตัวเลขและ policy | ใช้เป็น follow-up ไม่ใช่ requirement |
-| ISSUE-SCRB-02 | Won't yet | integration ยังเป็น assumption | ต้องออกแบบ backlog ที่ไม่พึ่ง real-time integration ก่อน |
+| FR-CFQP-01 | Must | ลูกค้าได้ประโยชน์ตรง แก้ Pain Point หลักเรื่องยืนรอหน้าร้านโดยไม่รู้คิว (Urgency สูง) | ไม่มี |
+| FR-CFQP-02 | Must | ข้อมูลเวลาช่วยลูกค้าบริหารเวลาพักที่มีจำกัดได้ (Value สูง) | ต้องพึ่งพาการคำนวณเวลาที่แม่นยำคลาดเคลื่อนไม่เกิน 5 นาที |
+| FR-CFQP-03 | Should | ช่วยเพิ่มความยืดหยุ่นให้ลูกค้า ลดภาระพนักงานในการหาบิลมายกเลิก | ต้องรอยืนยันนโยบาย (Cut-off time) จากร้านค้าก่อน |
+| BR-CFQP-01 | Must | ลด Risk การสูญเสียต้นทุนวัตถุดิบให้เจ้าของร้าน หากไม่ล็อกลูกค้าอาจยกเลิกตอนทำไปแล้ว | ต้องได้เวลากำหนด (Cut-off) ร่วมกับ FR-CFQP-03 |
+| FR-CFQP-04 | Must | แก้ความสับสนของพนักงาน (Value สูง) จำเป็นสำหรับการทำงานของร้านใน MVP (Urgency สูง) | ไม่มี |
+| FR-CFQP-05 | Should | ลด Risk ข้อพิพาทเรื่องการรอเก้อเมื่อของหมด และประหยัดเวลาตามหาลูกค้า | ต้องตกลง Flow การคืนเงินหรือเปลี่ยนเมนูก่อน |
+| FR-CFQP-06 | Could | มีประโยชน์ต่อผู้ดูแลพื้นที่ (Value) แต่ไม่ได้จำเป็นเร่งด่วนในการทำระบบคิวหลัก (Urgency ต่ำ) | ต้องรอสอบถามความต้องการรายงานเพิ่มเติม |
+| NFR-CFQP-01 | Must | ถ้าสถานะคิวไม่ Real-time ระบบจะไร้ประโยชน์ ลูกค้าก็ยังต้องยืนเฝ้า (Risk สูง) | ไม่มี |
+| NFR-CFQP-02 | Must | ป้องกันความเสี่ยงด้าน Privacy และปฏิบัติตามจริยธรรมที่ระบุใน Scope (Risk สูง) | ไม่มี |
+| NFR-CFQP-03 | Should | ช่วยเพิ่ม Usability ให้พนักงานที่กำลังยุ่งหน้าเตา | ไม่มี |
+| ISSUE-CFQP-01 | Won't yet | อยู่นอก Scope และได้รับคำแนะนำให้เน้นการจัดการคิว (Dependency เรื่อง Scope) | ต้องทำระบบคิวให้เสถียรก่อนพิจารณาเรื่อง Payment |
+| ISSUE-CFQP-02 | Won't yet | ขาดกฎเกณฑ์ของร้าน เสี่ยงสร้างความไม่พอใจเรื่องการถูกลัดคิว (Risk ด้าน Fairness สูง) | ต้องรอนโยบายที่เป็นรูปธรรมจากเจ้าของร้าน |
 
-## 3. สิ่งที่ไม่ได้เลือกเป็น requirement ทันที
+## 3. สิ่งที่ไม่ได้เลือกเป็น Requirement ทันที
 
-| สิ่งที่พบใน Week04 | เหตุผลที่ยังไม่กำหนดเป็น requirement |
+| สิ่งที่พบในเอกสารก่อนหน้า | เหตุผลที่ยังไม่กำหนดเป็น requirement |
 |---|---|
-| ใช้ LINE/email/QR เป็นช่องทางหลัก | เป็น channel preference ไม่ใช่ need ที่ยืนยันแล้ว |
-| ถ่ายรูปทุกครั้งตอนรับคืน | เป็น proposed solution และอาจกระทบ privacy |
-| กำหนด penalty no-show | ยังไม่มี policy source |
-| อ่านตารางเรียน real-time | ยังไม่มีหลักฐานว่า integration ทำได้ |
-| auto override คำขอเดิม | อาจกระทบ fairness และ authority; ต้องมี policy ก่อน |
-
-## 4. บทเรียนสำหรับนักศึกษา
-
-- Priority สูงไม่ได้แปลว่ารายละเอียดครบแล้วเสมอไป
-- Requirement ที่สำคัญแต่ยังขาด policy อาจเป็น `Needs Follow-up`
-- Issue ที่สำคัญมากอาจต้องเป็น `Hold` หากยังไม่มี evidence
-- Backlog ที่ดีช่วยบอกว่า “ทำอะไรต่อได้” และ “อะไรยังไม่ควรเดา”
+| การชำระเงินออนไลน์ภายในระบบ | เป็น Out of scope ใน Case นี้ Instructor ให้โฟกัสแค่โฟลว์คิว |
+| การลัดคิวเมนูที่ทำง่ายให้อัตโนมัติ | เสี่ยงต่อปัญหา Fairness ของลูกค้าคนอื่น ต้องรอ Owner กำหนดกติกา |
+| เก็บประวัติการแพ้อาหาร | ผิดหลัก Data minimization จึงตั้ง NFR มาควบคุมไม่ให้เก็บ |
