@@ -1,4 +1,4 @@
-# 05 — Open Questions and Issues: Campus Resource Booking
+# 05 — Open Questions and Issues: Campus Food Queue and Preorder
 
 > ไฟล์นี้แยกเรื่องที่ยังไม่รู้หรือยังไม่มี policy ออกจาก Requirement Backlog เพื่อไม่ให้นักศึกษาสร้าง requirement เกินหลักฐาน
 
@@ -6,27 +6,22 @@
 
 | OQ-ID | คำถาม | Related Evidence / Req | Owner ที่ควรถาม | ผลต่อ Week06 |
 |---|---|---|---|---|
-| OQ-W05-01 | ข้อมูลขั้นต่ำของคำขอจองมีอะไรบ้าง | E-04, BR-SCRB-01 | Resource Officer | ต้องใช้เขียน Acceptance Criteria |
-| OQ-W05-02 | Draft request ควรเก็บได้นานเท่าไร และใครเห็นได้บ้าง | FR-SCRB-02 | Resource Officer / IT | ต้องใช้ทำ state rule |
-| OQ-W05-03 | exception request ใครมีอำนาจอนุมัติในแต่ละกรณี | FR-SCRB-03 | Course/Department authority | ต้องใช้ทำ alternate flow |
-| OQ-W05-04 | ต้องแจ้งเตือน event ใด ผ่านช่องทางใด และก่อนกี่ชั่วโมง | FR-SCRB-06 | Student requester / Officer | ต้องใช้ทำ notification AC |
-| OQ-W05-05 | identity/role data ใดมาจากระบบกลางและเก็บซ้ำได้หรือไม่ | NFR-SCRB-01 | IT / Policy owner | ต้องใช้ทำ quality scenario |
+| OQ-W05-01 | หาวิธีหรือสูตรคำนวณเวลารอที่คลาดเคลื่อนไม่เกิน 5 นาที | FR-CFQP-02, E-08 | นักศึกษา | ต้องใช้กำหนด Acceptance Criteria ของการคำนวณเวลา |
+| OQ-W05-02 | นโยบาย Cut-off time ที่ชัดเจน ลูกค้ายกเลิกได้ถึงตอนไหน? | FR-CFQP-03, BR-CFQP-01, E-05, C-01 | เจ้าของร้าน | ต้องใช้เขียน Business Rule และ Alternate Flow |
+| OQ-W05-03 | Flow การจัดการเมื่อวัตถุดิบหมด (การคืนเงิน หรือ การเปลี่ยนเมนู) | FR-CFQP-05, E-02 | เจ้าของร้าน / พนักงาน | ต้องใช้ทำ Exception Flow ใน Use Case |
+| OQ-W05-04 | ผู้ดูแลพื้นที่ต้องการรายงานในรูปแบบใดและถี่แค่ไหน | FR-CFQP-06 | ผู้ดูแลพื้นที่อาหาร | อาจยังไม่กระทบ W06 แต่อาจใช้ร่าง Data format ในอนาคต |
 
 ## 2. Issues / Holds
 
 | Issue ID | เรื่องที่ต้อง Hold | เหตุผล | สิ่งที่ต้องเก็บเพิ่ม |
 |---|---|---|---|
-| ISSUE-SCRB-01 | quota, booking duration, no-show definition, penalty | ไม่มี policy source และ E-08 ระบุว่ายังไม่มีตัวเลขยืนยัน | policy document หรือ decision จากผู้มีอำนาจ |
-| ISSUE-SCRB-02 | real-time schedule integration | E-11 ยังเป็น assumption/OQ | ข้อมูลระบบกลาง/API/ความเป็นไปได้ |
-| ISSUE-SCRB-03 | mandatory photo for every handover/return | E-14 เป็น proposed solution และมี privacy concern | เหตุผลทาง accountability และ privacy review |
-| ISSUE-SCRB-04 | automatic override สำหรับกิจกรรมเรียน | เสี่ยงกระทบ fairness และ authority | authority matrix + escalation policy |
+| ISSUE-CFQP-01 | การรวมระบบรับชำระเงินออนไลน์ (Payment Gateway) เข้ากับระบบคิว | อยู่นอก Scope โครงงานและ Instructor ให้โฟกัสเฉพาะ Queue flow (อ้างอิง Feedback W02) | ไม่ต้องเก็บเพิ่ม (ถือเป็น Out of scope สำหรับเฟสนี้) |
+| ISSUE-CFQP-02 | ระบบคำนวณการแทรกคิว/ลัดคิวอัตโนมัติ (Auto-reordering) | ขาดกฎเกณฑ์ที่ตายตัวและอาจกระทบความรู้สึกยุติธรรม (Fairness) ของลูกค้าคิวก่อนหน้า | กฎการแทรกคิวที่ตายตัว เป็นธรรม และตรวจสอบได้จากเจ้าของร้าน |
 
 ## 3. Follow-up Plan
 
 | Action | Output ที่ต้องได้ | ใช้ต่อใน Week06 อย่างไร |
 |---|---|---|
-| สัมภาษณ์ Resource Officer เพิ่ม 10 นาที | required fields + draft rule | AC และ use case precondition |
-| ขอ policy/decision เรื่อง exception | authority matrix | alternate flow / extension |
-| ถาม IT เรื่อง identity/role | data boundary | quality scenario และ constraint |
-| เก็บข้อมูล no-show/cancel ถ้ามี | policy evidence | ยังไม่ใช้จนกว่าจะมี owner ยืนยัน |
-
+| สัมภาษณ์เจ้าของร้านเรื่อง Cut-off time และ Flow สินค้าหมด | กฎ Cut-off time + ขั้นตอนชดเชย | นำไปเขียน Rule, Alternate Flow, Exception Flow |
+| รวบรวมข้อมูล/สูตรการคำนวณเวลารอจาก Developer/สมมติฐาน | เกณฑ์ประเมินเวลารอ (นาที/เมนู) | นำไปกำหนด AC ของ FR-CFQP-02 |
+| สอบถามความต้องการรายงานจากผู้ดูแลพื้นที่ | รูปแบบ Data ที่ต้องการ | ใช้พิจารณาปรับปรุงใน Phase ต่อไป (รอได้) |
