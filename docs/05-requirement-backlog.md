@@ -51,8 +51,8 @@
 
 | Status | Requirement IDs | สิ่งที่ต้องทำต่อ |
 |---|---|---|
-| Ready for Week06 | FR-CFQP-01, BR-CFQP-01, FR-CFQP-04, NFR-CFQP-01, NFR-CFQP-02, NFR-CFQP-03 | นำไปเขียน Use Case, User Story, Acceptance Criteria และ Quality Scenario |
-| Needs Follow-up | FR-CFQP-02, FR-CFQP-03, FR-CFQP-05, FR-CFQP-06 | คุยกับ Stakeholders เพิ่มเรื่องความคลาดเคลื่อนเวลา, Cut-off time, การคืนเงิน, และรูปแบบรายงานสำหรับผู้ดูแลพื้นที่ |
+| Ready for Week06 | FR-CFQP-01, FR-CFQP-04, NFR-CFQP-01, NFR-CFQP-02, NFR-CFQP-03 | นำไปเขียน Use Case, User Story, Acceptance Criteria และ Quality Scenario |
+| Needs Follow-up | FR-CFQP-02, FR-CFQP-03, FR-CFQP-05, FR-CFQP-06, BR-CFQP-01 | คุยกับ Stakeholders เพิ่มเรื่องความคลาดเคลื่อนเวลา, Cut-off time, การคืนเงิน, และรูปแบบรายงานสำหรับผู้ดูแลพื้นที่ |
 | Hold | ISSUE-CFQP-01, ISSUE-CFQP-02 | แขวนไว้เนื่องจากหลุด Scope (Payment) และขาด Policy ที่ชัดเจนจากเจ้าของร้าน (การแทรกคิว) |
 
 ## 6. Review Checklist
@@ -72,6 +72,6 @@ Week06 ควรเริ่มจาก requirement ที่พร้อมก
 |---|---|
 | User Story | FR-CFQP-01, FR-CFQP-02, FR-CFQP-04 |
 | Use Case | FR-CFQP-01, FR-CFQP-04 |
-| Acceptance Criteria | BR-CFQP-01 |
+| Acceptance Criteria | - |
 | Quality Scenario | NFR-CFQP-01, NFR-CFQP-02, NFR-CFQP-03 |
 | Extension / Alternate Flow | FR-CFQP-03, FR-CFQP-05 |
