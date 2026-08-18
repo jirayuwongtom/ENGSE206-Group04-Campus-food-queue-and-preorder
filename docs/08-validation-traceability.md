@@ -67,7 +67,7 @@
 
 ## 7. Traceability Exceptions & Assumptions Log
 
-เนื่องจากพบว่ามี Requirement บางข้อที่ยังขาดความเชื่อมโยง (Traceability Gap) จากการทำ Baseline Review จึงขออธิบายสมมติฐานและแผนการแก้ไขดังนี้:
+เนื่องจากพบว่ามี Requirement บางข้อที่ยังขาดความเชื่อมโยง (Traceability Gap) จากการทำ Baseline Review จึงขออธิบายสมมติฐานและแผนการแก้ไขดังนี้
 
 * **NFR-CFQP-01 :**
   * **Current Status:** Conditional Baseline (Pending Evidence)
