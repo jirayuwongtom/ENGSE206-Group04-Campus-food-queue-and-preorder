@@ -11,6 +11,6 @@
 | **docs/05 Backlog** | FR/NFR+source+priority+acceptance measure | [ ] ครบ <br> [x] **ต้องแก้** | มี FR/NFR, Source, Priority ครบ (อยู่ใน `05-requirement-backlog.md` และอธิบายเหตุผลใน `05-prioritization-rationale.md`) แต่มีส่วนที่ต้องแก้ไขดังนี้:<br>1. **ยังไม่มีคอลัมน์ Acceptance measure** อย่างชัดเจนใน Backlog<br>2. **คำอธิบาย NFR ยังกำกวม (วัดผลไม่ได้)** เช่น "แบบทันที" และ "รวดเร็วที่สุด" |
 
 ---
-### 💡 สรุปสิ่งที่ทีมต้องนำไปแก้รวมกันในช่วงที่ 5:
+### สรุปสิ่งที่ทีมต้องนำไปแก้รวมกันในช่วงที่ 5:
 1. เพิ่มคอลัมน์ หรือระบุ **Acceptance measure (เกณฑ์การตรวจรับ)** สำหรับ Requirement แต่ละข้อลงใน `docs/05-requirement-backlog.md`
 2. ปรับแก้คำอธิบาย **NFR ให้สามารถวัดผลเป็นตัวเลขได้ชัดเจน** ใน `docs/05-requirement-backlog.md`
