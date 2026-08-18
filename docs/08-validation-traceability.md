@@ -1,6 +1,6 @@
 # 08 — Validation, Traceability and Change Management
 
-> **Week 8 deliverable**
+> **Week 8 deliverable (Updated for Baseline v1.0)**
 
 ## Case 04
 | ขั้นตอน | เนื้อหา (Case 04) | อ้างอิง | ตรวจ |
@@ -18,49 +18,59 @@
 |---|---|---|---|---|---|
 | **FR-CFQP-01** | E-07 | นักศึกษา/ลูกค้า | RC-01 |  ครบ | มีที่มาชัดเจน ลากกลับไปถึงปัญหาเรื่องโรงอาหารเสียงดังได้ |
 | **BR-CFQP-01** | E-05 | เจ้าของร้าน | RC-03 |  ครบ | มีที่มาชัดเจน ลากกลับไปถึงนโยบายลดการสูญเสียต้นทุนของเจ้าของร้าน |
-| **NFR-CFQP-01** |  ขาด (อ้างแค่ 01: Sect 9) | นักศึกษา/ลูกค้า |  ขาด (ไม่มี RC-xx) |  ขาด | เจอ Gap! เป็นข้อที่บอกว่า "ระบบต้องแสดงผลแบบทันที" ข้อนี้โผล่มาในเอกสารโดยไม่มีการสัมภาษณ์ (E-xx) มารองรับ และไม่มีใน Requirement Candidate (RC) |
-
-
+| **NFR-CFQP-01** |  ขาด (ระบุเป็น Assumption-01) | นักศึกษา/ลูกค้า |  ขาด (OQ-01) |  ขาด | **เจอ Gap!** เป็นข้อที่บอกว่า "ระบบต้องแสดงผลภายใน 3 วินาที" ข้อนี้โผล่มาในเอกสารโดยไม่มีการสัมภาษณ์มารองรับ จึงตั้งเป็นสมมติฐานไว้ก่อน |
 
 ## 1. Validation Plan
 
 | Validation Activity | Artefact | Participants | Criteria | Evidence |
 |---|---|---|---|---|
-| Requirement Baseline Review (Self-Directed Studio) | `docs/01` ถึง `docs/05` | สมาชิกทีม 04 ทุกคน | completeness, feasibility, testability, traceability | `evidence/week-05/artefact-health-check.md` |
+| Requirement Baseline Review (Self-Directed Studio) | `docs/01` ถึง `docs/05` | ศักดิ์ณรงค์, จิรายุ | completeness, feasibility, testability, traceability | `evidence/week-05/artefact-health-check.md` |
 
 ## 2. Requirements Quality Checklist
 
 | Check | Result | Evidence / Note |
 |---|---|---|
 | Requirement มี ID และไม่ซ้ำกัน | Pass | ตรวจสอบใน `docs/05` แล้ว มี ID ชัดเจนทุกข้อ |
-| ใช้ถ้อยคำชัดเจน ไม่กำกวม | **Revise** | NFR-CFQP-01 และ 03 ยังใช้คำว่า "แบบทันที", "รวดเร็วที่สุด" ซึ่งวัดผลไม่ได้ |
-| ตรวจรับหรือวัดผลได้ | **Revise** | NFR บางข้อต้องเปลี่ยนเป็นตัวเลข เช่น "ภายใน 2 วินาที" |
-| มี source/rationale | **Revise** | พบ Gap: NFR-CFQP-01 ไม่มี Evidence (E-xx) มารองรับ |
-| Scope เหมาะสม | Pass | ขอบเขตอยู่ในเรื่องการจัดการคิวและการสั่งอาหารล่วงหน้าตามที่ตกลงไว้ |
+| ใช้ถ้อยคำชัดเจน ไม่กำกวม | **Resolved** | แก้ไขคำว่า "แบบทันที" (FR-05, NFR-01), "รวดเร็วที่สุด" (NFR-03) และ "ชัดเจน" (FR-04) เรียบร้อยแล้วใน Baseline v1.0 |
+| ตรวจรับหรือวัดผลได้ | **Resolved** | เพิ่มคอลัมน์ Acceptance Measure ในตาราง `docs/05` เรียบร้อยแล้ว |
+| มี source/rationale | **Resolved (Conditional)** | พบ Gap ใน NFR-CFQP-01 แต่ได้ทำการบันทึกเป็น Assumption และ Open Question (OQ-01) ไว้แล้ว |
+| Scope เหมาะสม | Pass | ขอบเขตอยู่ในเรื่องการจัดการคิวและการสั่งอาหารล่วงหน้าตามที่ตกลงไว้ (ตัดระบบ Payment) |
 
 ## 3. Traceability Matrix
 
-| Stakeholder Need | FR / NFR | User Story / Use Case | Design Element | Verification / Review |
+| Stakeholder Need / Evidence | FR / NFR | User Story / Use Case | Design Element | Verification / Review |
 |---|---|---|---|---|
-| UN-01 (อยากตรวจสอบคิวได้เอง) | FR-CFQP-01 | *[รอทำใน Week 6]* | - | - |
-| UN-02 (ลดความผิดพลาดออเดอร์) | BR-CFQP-01 | *[รอทำใน Week 6]* | - | - |
-| *[Missing Need]* | NFR-CFQP-01 | *[รอทำใน Week 6]* | - | - |
+| UN-01, E-07 (อยากตรวจสอบคิวได้เอง) | FR-CFQP-01 | *[รอทำใน Week 06]* | - | - |
+| UN-02, E-01 (ลดความผิดพลาดออเดอร์) | FR-CFQP-04 | *[รอทำใน Week 06]* | - | - |
+| C-01, E-05 (รักษาต้นทุนวัตถุดิบ) | BR-CFQP-01 | *[รอทำใน Week 06]* | - | - |
+| Assumption-01, OQ-01 | NFR-CFQP-01 | *[รอทำใน Week 06]* | - | - |
 
 ## 4. Change Request Log
 
 | CR-ID | Date | Requested Change | Reason / Evidence | Impacted Artefacts | Decision | Owner |
 |---|---|---|---|---|---|---|
-| CR-05-01 | [18/08/2569] | แก้ไขคำว่า "แสดงผลแบบทันที" ให้เป็นตัวเลขที่วัดได้ เช่น "อัปเดตสถานะคิวภายใน 2 วินาที" | จากผลการ Audit พบว่าประโยคเดิมกำกวมและวัดผล Test ไม่ได้ | `docs/05` (NFR-CFQP-01) | **Accepted** | [สมาชิกทีม 04 ทุกคน] |
-| CR-05-02 | [18/08/2569] | เพิ่มคอลัมน์ Acceptance Measure ในเอกสาร Backlog | ตรวจพบจาก Artefact Health Check ว่ายังขาดเกณฑ์การตรวจรับ | `docs/05` | **Accepted** | [สมาชิกทีม 04 ทุกคน] |
+| CR-05-01 | 2026-08-18 | แก้ไขคำกำกวมใน Requirement ให้เป็นตัวเลขที่วัดผลได้ (เช่น "ภายใน 3 วินาที", "ไม่เกิน 2 คลิก", "เรียงแบบ FIFO") | จากผลการ Audit (Peer Review) พบว่าประโยคเดิมกำกวมและนำไปเขียน Test Script ไม่ได้ | `docs/05` (FR-04, FR-05, NFR-01, NFR-03) | **Accepted** | ศักดิ์ณรงค์ |
+| CR-05-02 | 2026-08-18 | เพิ่มคอลัมน์ Acceptance Measure ในเอกสาร Backlog ทุกข้อ | ตรวจพบจาก Artefact Health Check ว่ายังขาดเกณฑ์การตรวจรับที่ชัดเจน | `docs/05` | **Accepted** | ศักดิ์ณรงค์, จิรายุ |
 
 ## 5. Baseline Decision
 
-- **Baseline name:** `requirements-baseline-v1.0` (ตรงกับ Git Tag ที่จะสร้าง)
-- **Date:** [18/08/2569]
-- **Approved/Reviewed by:** สมาชิกกลุ่ม 04 ทุกคน (ผ่านการทำ Requirement Review Studio)
-- **Remaining open issues:** NFR-CFQP-01 ยังขาด Evidence ข้อมูลจากการสัมภาษณ์มารองรับ ตัดสินใจว่าจะเก็บไว้ก่อนและจะไปหาสัมภาษณ์ผู้ใช้เพิ่มเติมในสัปดาห์หน้า
+- **Baseline name:** `baseline-v1.0` (ตรงกับ Git Tag)
+- **Date:** 2026-08-18
+- **Approved/Reviewed by:** ศักดิ์ณรงค์, จิรายุ (ผ่านการทำ Requirement Review Studio)
+- **Remaining open issues:** NFR-CFQP-01 ยังขาด Evidence ข้อมูลจากการสัมภาษณ์มารองรับ ตัดสินใจว่าจะเก็บเป็น Assumption ไว้ก่อน และจะไปลงพื้นที่สังเกตการณ์/สัมภาษณ์ผู้ใช้เพิ่มเติมในสัปดาห์หน้า (OQ-01)
 
 ## 6. Follow-up Backlog
 
-- [ ] [งานที่ต้องปรับก่อนเริ่ม design]
+- [x] อัปเดต Requirement Backlog (`docs/05`) เพิ่มคอลัมน์ Acceptance Measure และแก้ไขคำกำกวมให้วัดผลได้ (ดำเนินการเสร็จใน Baseline v1.0)
 
+---
+
+## 7. Traceability Exceptions & Assumptions Log
+
+เนื่องจากพบว่ามี Requirement บางข้อที่ยังขาดความเชื่อมโยง (Traceability Gap) จากการทำ Baseline Review จึงขออธิบายสมมติฐานและแผนการแก้ไขดังนี้:
+
+* **NFR-CFQP-01 :**
+  * **Current Status:** Conditional Baseline (Pending Evidence)
+  * **Gap Identified:** ถูกจัดเกรดเป็น Must แต่ยังขาดหลักฐานการสัมภาษณ์/สังเกตการณ์ (Evidence) มารองรับโดยตรง
+  * **Assumption-01:** กำหนดขึ้นบนสมมติฐานพฤติกรรมลูกค้าว่า "หากระบบไม่อัปเดตสถานะให้เห็นภายใน 3 วินาที ลูกค้าจะเกิดความลังเลและเดินมาสอบถามพนักงานหน้าร้าน ซึ่งจะส่งผลกระทบให้เกิดความแออัดและการทำงานของพนักงานสะดุด"
+  * **Resolution / Open Question:** บันทึกเป็น Open Question (OQ-01) เพื่อวางแผนไปเก็บ Evidence เพิ่มเติมจากการสังเกตการณ์หน้าร้านในรอบถัดไป
