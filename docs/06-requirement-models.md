@@ -29,7 +29,9 @@
 
 | ID | Use Case | Primary Actor | Goal | Related FR | Diagram |
 |---|---|---|---|---|---|
-| UC-01 | [กรอก] | [Role] | [Goal] | FR-01 | `../diagrams/use-case/...` |
+| UC-01 | ตรวจสอบสถานะอาหารและคิว | นักศึกษา / ลูกค้า | รับทราบคิวปัจจุบันและระยะเวลาที่คลาดเคลื่อน เพื่อเข้าไปรับอาหารได้ตรงเวลากับพักเที่ยง | FR-CFQP-01, FR-CFQP-02 | `../diagrams/use-case/06-requirement-models.drawio.png` |
+| UC-02 | ตรวจสอบสถานะอาหารและคิว | พนักงานร้าน | 	ดำเนินการปรุงอาหารตามคิว FIFO ลดความผิดพลาดและภาระในการจำจดกระดาษ | FR-CFQP-04, BR-CFQP-01 | `../diagrams/use-case/06-requirement-models.drawio.png` |
+| UC-03 | ตรวจสอบสถานะอาหารและคิว | เจ้าของร้าน / พนักงาน | 	ป้องกันไม่ให้ลูกค้ายืนยันออเดอร์ที่ไม่มีของ และบริหารคิวไม่ให้สะดุดเสียหาย | FR-CFQP-05 | `../diagrams/use-case/06-requirement-models.drawio.png` |
 
 ## 4. Use Case Specification
 
