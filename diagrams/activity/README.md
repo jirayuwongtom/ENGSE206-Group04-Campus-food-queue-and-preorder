@@ -1,7 +1,7 @@
 # Activity Diagrams
 
 ใส่ workflow หลักและ alternate flow ที่สำคัญ
-
+![alt text](06ActivityDiagram.drawio.png)
 ## Checklist
 
 - [ ] มี source file ที่แก้ไขได้
