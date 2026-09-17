@@ -90,7 +90,7 @@
 
 ## 5. Requirement Models / Diagrams
 
-- Use Case Diagram: [link](../diagrams/use-case/README.md)
+- Use Case Diagram: [link-Png](../diagrams/use-case/README.md) | [link-Drawio](https://app.diagrams.net/#G11isK63JADzIazAeKkZ038lL-Z4wzHsJA#%7B%22pageId%22%3A%22oacUiYshSrbKBd5jZRxG%22%7D)
 - Activity Diagram: [link](../diagrams/activity1/README.md)
 - Domain Model: [link](../diagrams/domain-model/README.md)
 
