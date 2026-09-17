@@ -53,8 +53,8 @@
 
 | Status | Requirement IDs | สิ่งที่ต้องทำต่อ |
 |---|---|---|
-| Ready for Week06 | FR-01, FR-04, FR-06, NFR-03| นำไปเขียน Use Case, User Story, Acceptance Criteria และ Quality Scenario |
-| Needs Follow-up | FR-02, FR-03, BR-01, FR-05, NFR-01 | คุยกับ Stakeholders เพิ่มเรื่องความคลาดเคลื่อนเวลา, Cut-off time, การคืนเงิน, และรูปแบบรายงานสำหรับผู้ดูแลพื้นที่ |
+| Ready for Week06 | FR-01, FR-03, BR-01, FR-04, FR-06, NFR-03| นำไปเขียน Use Case, User Story, Acceptance Criteria และ Quality Scenario |
+| Needs Follow-up | FR-02, FR-05, NFR-01, NFR-02 | คุยกับ Stakeholders เพิ่มเรื่องความคลาดเคลื่อนเวลา, Cut-off time, การคืนเงิน, และรูปแบบรายงานสำหรับผู้ดูแลพื้นที่ |
 | Hold | ISSUE-01, ISSUE-02 | แขวนไว้เนื่องจากหลุด Scope (Payment) และขาด Policy ที่ชัดเจนจากเจ้าของร้าน (การแทรกคิว) |
 
 ## 6. Review Checklist
