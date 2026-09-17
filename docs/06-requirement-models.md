@@ -120,4 +120,10 @@
 
 บันทึกสิ่งที่ไม่ได้เลือกหรือเลื่อนออกจาก scope พร้อมเหตุผล
 
-[กรอก]
+ใน Requirement Backlog (`05-requirement-backlog.md`) ยังเป็นสถานะเป็น Needs Follow-up จึงยังเขียน User Story, Use Case ไม่ได้
+* **FR-02 (การประมาณเวลารอ)** : รอสรุปสูตรคำนวณและเกณฑ์ความคลาดเคลื่อนไม่เกิน 5 นาที (ST-04)
+* **FR-05 (การแจ้งเมนูหมด)** : รอทดสอบเงื่อนไขการอัปเดตแบบ Real-time
+* **NFR-01 (Real-time Latency)**: รอทดสอบ Latency ทางเทคนิคไม่เกิน 3 วินาที
+* **NFR-02 (Data Privacy)** : รอยืนยัน Privacy Policy และเกณฑ์ Data Retention
+* **ISSUE-01: การรวมระบบชำระเงินออนไลน์ (Payment Gateway)** ตัดออกเพราะเป็น Out of Scope ตามข้อแนะนำของ Instructor
+* **ISSUE-02 : การจัดแทรกคิวอัตโนมัติสำหรับเมนูทำง่าย (Auto-reordering)** กำหนดเป็น Hold เนื่องจากขาดกฎเกณฑ์ ที่ชัดเจนจากร้านค้า
