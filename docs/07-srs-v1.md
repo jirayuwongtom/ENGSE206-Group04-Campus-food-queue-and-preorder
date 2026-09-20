@@ -1,108 +1,176 @@
-# 07 — Software Requirements Specification (SRS) v1
+# Campus Food Queue and Preorder — Software Requirements Specification Draft v1
 
-> **Week 7 deliverable**  
-> เวอร์ชัน: v1.0 | สถานะ: Baseline Candidate | วันที่: [DD/MM/YYYY]
+## 0. Document Control
 
-## Document Control
-
-| Version | Date | Author | Reviewer | Summary of Change |
-|---|---|---|---|---|
-| 0.1 | | | | Initial draft |
-| 1.0 | | | | Baseline candidate |
+| Field | Value |
+|---|---|
+| Case ID | `CASE-04` |
+| Document ID | `CASE-04-SRS-W07-v1` |
+| Version | `0.1-draft` |
+| Status | Draft / Baseline Candidate |
+| Team/Owner | `Group04` |
+| W05 source snapshot | `05-requirement-backlog.md` |
+| W06 source snapshot | `06-requirement-models.md` |
 
 ## 1. Introduction
 
 ### 1.1 Purpose
-[กรอก]
 
-### 1.2 Scope
-#### In Scope
-- เริ่มจากร้านจำลอง 1 ร้านและเมนูจำกัด
-- รองรับกรณีเมนูหมดและรับสินค้าไม่ตรงเวลา  
-- การจัดการคิว การแสดงเวลารอ และการอัปเดตสถานะออเดอร์
+`[กำหนดอะไร ใครใช้ และส่งต่อไปทำอะไร]`
 
-#### Out of Scope
-- ไม่รวม payment gateway จริง  
-- ไม่รวมระบบบัญชีร้าน และระบบจัดซื้อวัตถุดิบ  
-- ไม่รวมแพลตฟอร์ม food delivery เต็มรูปแบบ  
-- ไม่เก็บข้อมูลแพ้อาหารเชิงสุขภาพละเอียด  
+### 1.2 Problem and Goals
 
-### 1.3 Definitions, Acronyms and Abbreviations
-ดู [Glossary](glossary.md)
+| Goal | Desired outcome | Source | Status |
+|---|---|---|---|
+| `[G-xx]` | `[outcome]` | `[F/E/TD]` | Fact / Decision / Assumption |
 
-### 1.4 References
-- Case Card
-- Evidence log
-- Course materials
+### 1.3 Product Scope
+
+| In Scope | Out of Scope / Extension | Reason/source |
+|---|---|---|
+| `[capability]` | `[item]` | `[why/source]` |
+
+### 1.4 Definitions
+
+| Term | Meaning | Source/Decision |
+|---|---|---|
+| `[term]` | `[business meaning]` | `[source]` |
 
 ## 2. Overall Description
 
-### 2.1 Product Perspective
-[กรอก]
+### 2.1 Product Context
 
-### 2.2 User Classes and Characteristics
-- นักศึกษา / ลูกค้า : สั่งอาหารได้ง่าย รู้เวลารอที่ชัดเจน และได้รับสินค้าที่ถูกต้อง
-- พนักงานร้าน : รับออเดอร์ได้ชัดเจน ลดความสับสน และสามารถจัดลำดับงานได้
-- เจ้าของร้าน : มองเห็นภาพรวมภาระงานทั้งหมด และลดข้อผิดพลาดของออเดอร์
-- ผู้ดูแลพื้นที่อาหาร : ลดความแออัดในพื้นที่และลดข้อร้องเรียนจากนักศึกษา/ร้านค้า
+`[system boundary, system of record และ external systems โดยไม่เลือก technology]`
 
-### 2.3 Operating Environment
-[กรอก]
+### 2.2 User Classes and Authority
 
-### 2.4 Constraints
-- แต่ละร้านมีระยะเวลาในการเตรียมอาหารไม่เท่ากัน
-- ไม่เปิดใช้งานระบบตัดเงินจริงในเฟสโครงงานรายวิชานี้
+| Actor | Goal | Authorized actions | Restrictions | Source |
+|---|---|---|---|---|
+| `[ACT-xx]` | `[goal]` | `[actions]` | `[limits]` | `[source]` |
 
-### 2.5 Assumptions and Dependencies
-- นักศึกษามีสมาร์ตโฟนที่สามารถเชื่อมต่ออินเทอร์เน็ตสำหรับดูคิวได้
-- พนักงานมีอุปกรณ์ (เช่น Tablet หรือมือถือ) สำหรับกดเปลี่ยนสถานะออเดอร์
-- ลูกค้าและพนักงานยินดีปรับตัวใช้งานระบบคิวแบบใหม่แทนการตะโกนสั่งแบบเดิม
+### 2.3 Capabilities
+
+| CAP | Capability | FR/BR/NFR/DR | US/UC/AC | Coverage |
+|---|---|---|---|---|
+| `[CAP-xx]` | `[name]` | `[IDs]` | `[IDs]` | Detailed / Partial |
+
+### 2.4 Constraints and Assumptions
+
+| ID | Type | Statement | Source | Status/next action |
+|---|---|---|---|---|
+| `[CT/AS-xx]` | Constraint / Assumption / TD | `[statement]` | `[source]` | `[status]` |
+
+### 2.5 External Interfaces
+
+| ID | System | Data/direction | Core/Extension | TBD/failure concern |
+|---|---|---|---|---|
+| `[EXT-xx]` | `[name]` | `[exchange]` | `[scope]` | `[unknown]` |
 
 ## 3. Functional Requirements
 
-> สรุปจาก `05-requirement-backlog.md` และต้องคง ID เดิม
+จัดกลุ่มตาม capability/workflow ทุก W05 FR ต้องมี disposition
 
-| ID | Requirement | Priority | Acceptance / Verification |
+| FR | Requirement | Source | Priority/admission | BR/NFR/DR | US/UC/AC | Status |
+|---|---|---|---|---|---|---|
+| `[FR-xx]` | `ระบบต้อง…` | `[F/E/TD]` | `[Must/Core]` | `[IDs]` | `[IDs]` | Ready / Partial / TBD |
+
+### Detailed Requirement Record
+
+| Field | Value |
+|---|---|
+| Requirement ID | `[FR-xx]` |
+| Statement | `ระบบต้อง…` |
+| Rationale/Goal | `[G-xx/why]` |
+| Source | `[F/E/TD]` |
+| Priority/Admission | `[Must/Should/Could] / [Core/Supporting/Extension]` |
+| Trigger | `[observable event]` |
+| Preconditions/guards | `[state/rule]` |
+| Expected result | `[state/data/event]` |
+| BR/NFR/DR links | `[IDs]` |
+| US/UC/AC links | `[IDs]` |
+| Verification | `[method + scenario]` |
+| Status/TBD | `[status + gap/evidence need]` |
+
+## 4. Business Rules
+
+| BR | Rule | Authority/source | Affected FR/UC | Status |
+|---|---|---|---|---|
+| `[BR-xx]` | `[rule]` | `[TD/source]` | `[IDs]` | Confirmed for case / TBD |
+
+## 5. Non-functional Requirements
+
+| NFR | Quality statement | Context/stimulus | Response/measure | Source | Verification | Status/TBD |
+|---|---|---|---|---|---|---|
+| `[NFR-xx]` | `ระบบต้อง…` | `[context]` | `[measure or TBD]` | `[source]` | `[method]` | `[status]` |
+
+## 6. Data Requirements
+
+ส่วนนี้เป็น conceptual data requirement ยังไม่ใช่ physical database schema
+
+| DR | Concept | Requirement/minimum data | Relationships | Classification | Source | Status |
+|---|---|---|---|---|---|---|
+| `[DR-xx]` | `[concept]` | `[meaning + minimum data]` | `[concept links]` | `[class]` | `[IDs]` | Ready / TBD |
+
+## 7. Behavioral Model References
+
+| Model | IDs/version | Requirement anchors | Coverage/gap | SRS use |
+|---|---|---|---|---|
+| User Stories | `[US-*]` | `[W05 IDs]` | `[coverage]` | `[section]` |
+| Use Cases | `[UC-*]` | `[W05 IDs]` | `[level/gap]` | `[section]` |
+| Acceptance Criteria | `[AC-*]` | `[W05 IDs]` | `[coverage]` | `[verification]` |
+
+### 7.1 Lifecycle Rules
+
+| From | Trigger | To | Guard/result | Source |
+|---|---|---|---|---|
+| `[state]` | `[event]` | `[state]` | `[guard]` | `[ID]` |
+
+## 8. External Interface Requirements
+
+| Interface | Requirement/data | Direction | Owner | Failure/privacy concern | Status |
+|---|---|---|---|---|---|
+| `[EXT-xx]` | `[what]` | `[in/out]` | `[owner]` | `[concern]` | Core / Extension / TBD |
+
+## 9. Traceability and Coverage
+
+| Source | W05 requirement | W06 model | SRS section | Verification | Coverage |
+|---|---|---|---|---|---|
+| `[F/E/TD]` | `[FR/BR/NFR/DR]` | `[US/UC/AC]` | `[หัวข้อ ]` | `[VF/method]` | Covered / Partial |
+
+## 10. Open Issues
+
+| OI | Question/TBD | Affected IDs | Owner | Next action | Expected evidence | Needed by |
+|---|---|---|---|---|---|---|
+| `[OI-xx]` | `[unknown]` | `[IDs]` | `[role]` | `[action]` | `[evidence]` | `[milestone]` |
+
+## 11. Verification Plan
+
+| VF | Method | Target IDs | Procedure/evidence | Owner | Status |
+|---|---|---|---|---|---|
+| `[VF-xx]` | Review / Demo / Test / Analysis / Inspection | `[IDs]` | `[how/evidence]` | `[owner]` | Planned |
+
+## 12. Review Gate
+
+- [ ] W05 FR/BR/NFR/DR ทุกข้อมี disposition
+- [ ] W06 US/UC/AC ย้อนกลับ W05 ได้
+- [ ] Partial/Extension/TBD มองเห็น
+- [ ] Open Issue ทุกข้อมี owner/action/evidence
+- [ ] Status ยังเป็น Baseline Candidate
+
+## Appendix A — Requirement Disposition
+
+| Backlog ID | Included/Deferred/Extension/Issue | SRS section | Reason |
 |---|---|---|---|
-| FR-01 | [กรอก] | Must | [กรอก] |
+| `[ID]` | `[disposition]` | `[หัวข้อ ]` | `[reason]` |
 
-## 4. Non-functional Requirements
+## Appendix B — Review and Revision
 
-| ID | Quality Attribute | Requirement | Measure |
+| Item | Before | After | Reason/source | Reviewer |
+|---|---|---|---|---|
+| `[ID/section]` | `[old]` | `[new]` | `[why]` | `[name]` |
+
+## Appendix C — AI Use Disclosure
+
+| Activity | AI assistance | Human verification/change | Evidence |
 |---|---|---|---|
-| NFR-01 | [กรอก] | [กรอก] | [กรอก] |
-
-## 5. External Interface Requirements
-
-### 5.1 User Interfaces
-[กรอก]
-
-### 5.2 Software / External System Interfaces
-[กรอก]
-
-### 5.3 Data Interfaces
-[กรอก]
-
-## 6. Business Rules
-
-| ID | Rule | Related Requirement |
-|---|---|---|
-| BR-01 | ระบบจะไม่อนุญาตให้ลูกค้ายกเลิกคำสั่งซื้อ หากสถานะออเดอร์ถูกเปลี่ยนเป็น 'กำลังทำ' แล้ว | FR-03 |
-
-## 7. Requirement Models
-
-- Use Case Diagram: [link]
-- Activity Diagram(s): [link]
-- Domain Model: [link]
-
-## 8. Open Issues
-
-| ID | Issue / Question | Owner | Due / Status |
-|---|---|---|---|
-| OQ-01 | [กรอก] | [ชื่อ] | Open |
-
-## 9. Approval / Review Record
-
-| Reviewer | Date | Result | Key Feedback |
-|---|---|---|---|
-| [ชื่อ/บทบาท] | | Approved / Revision | |
+| `[task]` | `[what AI did]` | `[accepted/rejected/changed]` | `[path/link]` |
