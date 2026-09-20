@@ -1,16 +1,16 @@
-# [System Name] — Software Requirements Specification Draft v1
+# Campus Food Queue and Preorder — Software Requirements Specification Draft v1
 
 ## 0. Document Control
 
 | Field | Value |
 |---|---|
-| Case ID | `[CASE-ID]` |
-| Document ID | `[CASE-ID]-SRS-W07-v1` |
+| Case ID | `CASE-04` |
+| Document ID | `CASE-04-SRS-W07-v1` |
 | Version | `0.1-draft` |
 | Status | Draft / Baseline Candidate |
-| Team/Owner | `[team]` |
-| W05 source snapshot | `[artifact/version/hash]` |
-| W06 source snapshot | `[artifact/version/hash]` |
+| Team/Owner | `Group04` |
+| W05 source snapshot | `05-requirement-backlog.md` |
+| W06 source snapshot | `06-requirement-models.md` |
 
 ## 1. Introduction
 
