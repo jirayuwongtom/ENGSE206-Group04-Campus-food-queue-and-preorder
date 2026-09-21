@@ -93,29 +93,76 @@
 
 | FR | Requirement | Source | Priority/admission | BR/NFR/DR | US/UC/AC | Status |
 |---|---|---|---|---|---|---|
-| `FR-01` | ระบบต้องแสดงหมายเลขคิวปัจจุบันและสถานะอาหารบนหน้าจอฝั่งลูกค้า | E-07, PP-01, UN-01 | Must / Core | NFR-01 | US-01, UC-01, AC-01 | Ready / Covered |
-| `FR-04` | ระบบต้องแสดงรายการคิวเรียงลำดับเวลารับออเดอร์ (FIFO) แบ่งกลุ่มสถานะฝั่งพนักงาน | E-01, E-03, E-04, UN-02 | Must / Core | NFR-03 | US-02, US-03, US-04, US-06, UC-02, AC-02 | Ready / Covered |
-| `FR-03` | ระบบต้องให้ลูกค้ายกเลิกคำสั่งซื้อผ่านระบบได้ด้วยตนเอง | UN-03, E-08 | Should / Core | BR-01 | US-10, UC-04, AC-05 | Ready / Covered |
-| `FR-06` | ระบบต้องแสดงผลรายงานสถิติความหนาแน่นคิวรายช่วงเวลาให้ผู้ดูแลพื้นที่ | 02: Data Flow | Could / Supporting | - | US-05, US-07, UC-03, AC-03 | Ready / Covered |
-| `FR-02` | ระบบต้องแสดงจำนวนคิวรอและประเมินเวลารอก่อนยืนยันสั่งซื้อ | E-06, E-08, UN-01 | Must / Deferred | ST-04 | (Unmodeled) | Needs Follow-up / TBD |
-| `FR-05` | ระบบต้องอัปเดตสถานะเมนูหมดฝั่งลูกค้าภายใน 3 วินาที | E-02, UN-04 | Should / Deferred | NFR-01 | (Unmodeled) | Needs Follow-up / TBD |
+| `FR-01` | ระบบต้องแสดงหมายเลขคิวปัจจุบันและสถานะอาหารบนหน้าจอฝั่งลูกค้า | `RC-01`, `E-07`(`04-evidence-log.md`) | Must / Core | NFR-01 | US-01, UC-01, AC-01 | Ready / Covered |
+| `FR-04` | ระบบต้องแสดงรายการคิวเรียงลำดับเวลารับออเดอร์ (FIFO) แบ่งกลุ่มสถานะฝั่งพนักงาน | `RC-04`, `E-01`(`04-evidence-log.md`) | Must / Core | NFR-03 | US-02, US-03, US-04, US-06, UC-02, AC-02 | Ready / Covered |
+| `FR-03` | ระบบต้องให้ลูกค้ายกเลิกคำสั่งซื้อผ่านระบบได้ด้วยตนเอง | `RC-03`, `E-08`(`04-evidence-log.md`) | Should / Core | BR-01 | US-10, UC-04, AC-05 | Ready / Covered |
+| `FR-06` | ระบบต้องแสดงผลรายงานสถิติความหนาแน่นคิวรายช่วงเวลาให้ผู้ดูแลพื้นที่ | `02: Data Flow` | Could / Supporting | DR-05 | US-05, US-07, UC-03, AC-03 | Ready / Covered |
+| `FR-02` | ระบบต้องแสดงจำนวนคิวรอและประเมินเวลารอก่อนยืนยันสั่งซื้อ | `RC-02`, `E-06`(`04-evidence-log.md`) | Must / Deferred | - | (Unmodeled) | Needs Follow-up / TBD |
+| `FR-05` | ระบบต้องอัปเดตสถานะเมนูหมดฝั่งลูกค้าภายใน 3 วินาที | `RC-05`, `E-02`(`04-evidence-log.md`) | Should / Deferred | NFR-01 | (Unmodeled) | Needs Follow-up / TBD |
 
 ### Detailed Requirement Record
 
 | Field | Value |
 |---|---|
-| Requirement ID | `[FR-xx]` |
-| Statement | `ระบบต้อง…` |
-| Rationale/Goal | `[G-xx/why]` |
-| Source | `[F/E/TD]` |
-| Priority/Admission | `[Must/Should/Could] / [Core/Supporting/Extension]` |
-| Trigger | `[observable event]` |
-| Preconditions/guards | `[state/rule]` |
-| Expected result | `[state/data/event]` |
-| BR/NFR/DR links | `[IDs]` |
-| US/UC/AC links | `[IDs]` |
-| Verification | `[method + scenario]` |
-| Status/TBD | `[status + gap/evidence need]` |
+| Requirement ID | `FR-01` |
+| Statement | ระบบต้องแสดง "หมายเลขคิวปัจจุบัน" และ "สถานะอาหาร" บนหน้าจอฝั่งลูกค้า เพื่อให้ลูกค้าตรวจสอบได้โดยไม่ต้องฟังเสียงเรียก |
+| Rationale/Goal | แก้ปัญหาโรงอาหารเสียงดังและลดการยืนรอแออัดหน้าร้าน (`PP-01`, `G-01`) |
+| Source | `RC-01`, `E-07`, `PP-01`, `UN-01` |
+| Priority/Admission | Must / End-to-End Core |
+| Trigger | ลูกค้าเปิดหน้าติดตามคิว หรือ พนักงานกดเปลี่ยนสถานะออเดอร์หน้าเตา |
+| Preconditions/guards | ลูกค้าทำรายการสั่งซื้อสำเร็จและมีหมายเลขคิวบันทึกอยู่ในระบบ |
+| Expected result | 1. หน้าจอฝั่งลูกค้าแสดงหมายเลขคิว และสถานะการปรุงอาหารล่าสุด (`ออเดอร์ใหม่` -> `กำลังทำ` -> `พร้อมรับ` -> `รับแล้ว`)<br>2. เมื่อสถานะเปลี่ยนเป็น `พร้อมรับ` ระบบต้องส่งสัญญาณแจ้งเตือน (Notification) ไปยังโทรศัพท์มือถือของลูกค้า
+ |
+| BR/NFR/DR links | ``NFR-01`, `DR-01`, `DR-02`` |
+| US/UC/AC links | ``US-01`, `UC-01`, `AC-01`` |
+| Verification | **Demonstration**: เปลี่ยนสถานะฝั่งร้านค้า แล้วตรวจดูการอัปเดตบนหน้าจอลูกค้าและการส่งสัญญาณแจ้งเตือน |
+| Status/TBD | Ready / Covered |
+
+| Field | Value |
+|---|---|
+| Requirement ID | `FR-04` |
+| Statement | หน้าจอฝั่งพนักงานต้องแสดงรายการคิวโดยเรียงตามลำดับเวลารับออเดอร์ (FIFO) และมีการแบ่งกลุ่มสถานะชัดเจน |
+| Rationale/Goal | ลดภาระงานของพนักงานและป้องกันการทำอาหารผิดลำดับคิวช่วงเร่งด่วน (`PP-02`, `G-03`) |
+| Source | ``RC-04`, `E-01`, `E-03`, `E-04`, `UN-02`` |
+| Priority/Admission | Must / End-to-End Core |
+| Trigger | พนักงานเปิดหรือรีเฟรชหน้าจอควบคุมคิวฝั่งร้านค้า |
+| Preconditions/guards | มีรายการออเดอร์ส่งเข้าสู่ระบบฝั่งร้านค้า` |
+| Expected result | แสดงรายการคิวแบ่งตามสถานะ (`ออเดอร์ใหม่`, `กำลังทำ`, `พร้อมรับ`) โดยกลุ่มออเดอร์ใหม่เรียงจากเวลาเก่าไปใหม่ |
+| BR/NFR/DR links | ``NFR-03`, `DR-01`, `DR-03`` |
+| US/UC/AC links | ``US-02`, `US-03`, `US-04`, `US-06`, `UC-02`, `AC-02`` |
+| Verification | **Inspection**: ป้อนออเดอร์ทดสอบต่างเวลากัน แล้วตรวจดูการจัดเรียงลำดับคิวจากบนลงล่างบนหน้าจอพนักงาน |
+| Status/TBD | **Ready / Covered** |
+
+| Field | Value |
+|---|---|
+| Requirement ID | `FR-03` |
+| Statement | ระบบต้องมีฟังก์ชันให้ลูกค้ายกเลิกออเดอร์ได้ด้วยตนเองผ่านระบบ |
+| Rationale/Goal | เพิ่มความยืดหยุ่นให้ลูกค้าและลดภาระพนักงานในการหาบิลกระดาษมายกเลิก (`UN-03`, `E-08`) |
+| Source | ``RC-03`, `E-08`, `UN-03`` |
+| Priority/Admission | Should / End-to-End Core |
+| Trigger | ลูกค้าเปิดดูออเดอร์ตนเองและกดปุ่ม "ยกเลิกออเดอร์" |
+| Preconditions/guards | สถานะออเดอร์ต้องเป็น `ออเดอร์ใหม่` เท่านั้น (ขึ้นอยู่กับกฎ `BR-01`) |
+| Expected result | หากผ่าน Guard: เปลี่ยนสถานะออเดอร์เป็น `Cancelled` และถอดคิวออกจากหน้าจอพนักงาน |
+| BR/NFR/DR links | ``BR-01`, `DR-01`` |
+| US/UC/AC links | ``US-10`, `UC-04`, `AC-05`` |
+| Verification | **Test Case**: กดปุ่มยกเลิกในสถานะ `ออเดอร์ใหม่` แล้วตรวจสอบว่าเปลี่ยนสถานะเป็น `Cancelled` สำเร็จ |
+| Status/TBD | Ready / Covered |
+
+| Field | Value |
+|---|---|
+| Requirement ID | `FR-06` |
+| Statement | ระบบสามารถแสดงรายงานสถิติความหนาแน่นของคิวในช่วงเวลาต่างๆ ให้ผู้ดูแลพื้นที่อาหาร |
+| Rationale/Goal | สนับสนุนผู้ดูแลพื้นที่ในการวิเคราะห์ปริมาณคิวและวางแผนจัดการพื้นที่ส่วนกลาง (`02: Data Flow`) |
+| Source | `02: Data Flow`, `02-stakeholder-context-scope.md` |
+| Priority/Admission | Could / Supporting Core` |
+| Trigger | ผู้ดูแลพื้นที่เปิดหน้ารายงานสถิติบนระบบแอดมินและเลือกช่วงเวลา |
+| Preconditions/guards | ผู้ดูแลพื้นที่เข้าสู่ระบบด้วยสิทธิ์แอดมิน |
+| Expected result | แสดงรายงานในรูปแบบ On-screen Dashboard สรุปปริมาณคิวและเวลารอเฉลี่ยรายชั่วโมง |
+| BR/NFR/DR links | `DR-05` |
+| US/UC/AC links | ``US-05`, `US-07`, `UC-03`, `AC-03`` |
+| Verification | **Data Inspection**: เรียกดูรายงานสถิติตามช่วงเวลา แล้วตรวจวัดความถูกต้องเทียบกับประวัติออเดอร์จริง |
+| Status/TBD | Ready / Covered |
+
 
 ## 4. Business Rules
 
