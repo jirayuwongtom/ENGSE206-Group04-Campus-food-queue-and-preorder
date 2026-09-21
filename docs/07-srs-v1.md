@@ -301,13 +301,28 @@
 
 | Backlog ID | Included/Deferred/Extension/Issue | SRS section | Reason |
 |---|---|---|---|
-| `[ID]` | `[disposition]` | `[หัวข้อ ]` | `[reason]` |
+| `FR-01` | End-to-End Core | Section 3.2 | ฟังก์ชันหลักในการแก้ปัญหาการยืนรอคิวหน้าร้าน (In-Scope Phase 1) |
+| `FR-04` | End-to-End Core | Section 3.2 | ฟังก์ชันหลักในการดำเนินงานหน้าเตาของพนักงานร้านค้า (In-Scope Phase 1) |
+| `FR-03` | End-to-End Core | Section 3.2 | ให้ความยืดหยุ่นแก่ลูกค้า โดยต้องอยู่ภายใต้เงื่อนไขกฎ `BR-01` |
+| `BR-01` | End-to-End Core | Section 4 | กฎจุดตัด Cut-off เพื่อป้องกันความเสียหายของวัตถุดิบร้านค้า |
+| `FR-06` | Supporting Core | Section 3.2 | ฟังก์ชันสนับสนุนผู้บริหารพื้นที่ส่วนกลางในการวิเคราะห์ความแออัด |
+| `NFR-03` | Supporting Core | Section 5 | ข้อกำหนดด้านความสะดวกในการใช้งานของพนักงานช่วงเวลาเร่งด่วน |
+| `FR-02` | Deferred / TBD | Section 10 | ชะลอการทำ Model ใน v1.0 จนกว่าจะยืนยันสูตรคำนวณเวลา |
+| `FR-05` | Deferred / TBD | Section 10 | ชะลอการทำ Model ใน v1.0 จนกว่าจะทดสอบระบบ |
+| `NFR-01` | Deferred / TBD | Section 5 &amp; 10 | ชะลอการกำหนดเกณฑ์วัดผล จนกว่าจะทดสอบ Latency ทางเทคนิค |
+| `NFR-02` | Deferred / TBD | Section 5 &amp; 10 | ชะลอการสรุปเกณฑ์ จนกว่าจะอนุมัติ Privacy Policy |
+| `ISSUE-01` | Out of Scope | Section 1.3 | ตัดออกตามคำแนะนำ Instructor เพื่อโฟกัสเฉพาะ Queue Flow |
+| `ISSUE-02` |Out of Scope / Hold | Section 1.3 &amp; 10 | พักไว้เนื่องจากขาดกฎเกณฑ์ความยุติธรรมที่แน่ชัดจากร้านค้า |
 
 ## Appendix B — Review and Revision
 
 | Item | Before | After | Reason/source | Reviewer |
 |---|---|---|---|---|
-| `[ID/section]` | `[old]` | `[new]` | `[why]` | `[name]` |
+| **REV-01** (Section 4: `BR-01`) | ระบุเพียงล็อกปุ่มยกเลิกเมื่อสถานะเป็น `Cooking` โดยไม่ได้ระบุเงื่อนไขกรณีส่งคำขอพร้อมกัน | **เพิ่ม Server-side Timestamp Rule**: หากสถานะใน DB เปลี่ยนเป็น `Cooking` ก่อน ระบบจะปฏิเสธคำขอยกเลิกทันที | แก้ไข Race Condition และข้อพิพาทเรื่อง Latency (`DEF-01`) | Peer Reviewer / Team Approval |
+| **REV-02** (Section 3.2: `FR-06`) | ระบุว่า "แสดงผลหรือส่งออกรายงานสถิติ" โดยไม่ได้จำกัดรูปแบบการส่งออก | **จำกัด Scope Phase 1**: แสดงผลรายงานในรูปแบบ **On-screen Dashboard** ส่วนการ Export เป็นไฟล์จัดเป็น Extension | ขจัดความก้ำกวมของขอบเขตระบบ Phase 1 (`DEF-02`) | Peer Reviewer / Team Approval |
+| **REV-03** (Section 5: `NFR-03`) | ระบุเปลี่ยนสถานะออเดอร์ใน 2 คลิก โดยไม่ได้ระบุขอบเขตเมนูที่บังคับใช้ | **แยก Usability Scope**: เงื่อนไข 2 คลิก บังคับใช้เฉพาะ **Primary Workflow** (การเปลี่ยนสถานะคิวหน้าเตา) | ป้องกันความสับสนในการออกแบบ UI (`DEF-03`) | Peer Reviewer / Team Approval |
+| **REV-04** (Section 6: `DR-05`) | กำหนดฟิลด์ `Average Wait Duration` โดยไม่ได้ชี้แจงความต่างจาก `FR-02` | **ชี้แจงประเภทข้อมูล**: เป็นข้อมูลสถิติประวัติเวลารอย้อนหลังตามจริง ไม่ใช่การประมาณการเวลารอล่วงหน้าของ `FR-02` | ป้องกันความเข้าใจผิดเรื่อง Cross-cutting Scope (`DEF-04`) | Peer Reviewer / Team Approval |
+| **REV-05** (Section 5: `NFR-01`) | ลงสถานะ TBD สำหรับ Real-time Latency (3s) โดยไม่ได้ระบุสภาวะแวดล้อมการทดสอบ | **กำหนด Load Condition**: ระบุเงื่อนไขใน TBD ว่าต้องทดสอบความเร็วส่งข้อมูลภายใต้สภาวะโหลดจำลอง 50 Users | กำหนดเกณฑ์ทดสอบสำหรับ Week 08 (`DEF-05`) | Peer Reviewer / Team Approval |
 
 ## Appendix C — AI Use Disclosure
 
