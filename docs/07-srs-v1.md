@@ -167,50 +167,110 @@
 
 ## 4. Business Rules
 
-| BR | Rule | Authority/source | Affected FR/UC | Status |
-|---|---|---|---|---|
-| `[BR-xx]` | `[rule]` | `[TD/source]` | `[IDs]` | Confirmed for case / TBD |
-
+| BR | Rule | Authority / Source | Affected FR / UC | Status |
+| :--- | :--- | :--- | :--- | :--- |
+| **BR-01** | ไม่อนุญาตให้ยกเลิกคำสั่งซื้อ หากสถานะออเดอร์ถูกเปลี่ยนเป็น 'กำลังทำ' แล้ว | เจ้าของร้าน / `E-05`, `C-01 (04-evidence-log.md)` | `FR-03`, `UC-04` | Confirmed for case |
+##### Detailed Rule Specification: BR-01
+* **Rule ID**: `BR-01`
+* **Statement**: ระบบจะไม่อนุญาตให้ลูกค้ายกเลิกคำสั่งซื้อ หากสถานะออเดอร์ถูกเปลี่ยนเป็น 'กำลังทำ' แล้ว
+* **Business Authority**: เจ้าของร้านค้า (`04-evidence-log.md` ข้อตกลง `C-01`)
+* **Rationale**: ป้องกันความเสียหายทางธุรกิจและรักษาต้นทุนวัตถุดิบจากการยกเลิกคำสั่งซื้อหลังลงมือปรุงอาหารแล้ว
+* **Enforcement & Guard**: เมื่อพนักงานกดเปลี่ยนสถานะเป็น `กำลังทำ` ระบบจะล็อกปุ่มยกเลิกฝั่งลูกค้าทันที หากคำขอยกเลิกมาถึงในเวลาเดียวกัน ระบบจะยึด Server Timestamp เป็นหลัก หากสถานะใน DB เป็น `Cooking` ก่อน คำขอยกเลิกจะถูกปฏิเสธ
+* **Affected Behaviors**: `FR-03`, `US-10`, `US-11`, `UC-04`, `AC-05`
 ## 5. Non-functional Requirements
 
-| NFR | Quality statement | Context/stimulus | Response/measure | Source | Verification | Status/TBD |
-|---|---|---|---|---|---|---|
-| `[NFR-xx]` | `ระบบต้อง…` | `[context]` | `[measure or TBD]` | `[source]` | `[method]` | `[status]` |
+| NFR | Quality Statement | Context / Stimulus | Response / Measure | Source | Verification | Status / TBD |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **NFR-03** | หน้าจอฝั่งร้านค้าต้องกดเปลี่ยนสถานะออเดอร์ได้สำเร็จด้วยการกดไม่เกิน 2 คลิก | พนักงานกดเปลี่ยนสถานะคิวหน้าเตาช่วงเวลาเร่งด่วน | จำนวนการกด/สัมผัส 2 ครั้ง | `01-problem-brief-v0.1.md` | Usability Test | **Ready / Covered** |
+| **NFR-01** | ระบบต้องแสดงผลการอัปเดตสถานะไปที่หน้าจอลูกค้าภายใน 3 วินาที | พนักงานกดเปลี่ยนสถานะออเดอร์ฝั่งร้านค้า | Real-time Latency  3 วินาที | `01-problem-brief-v0.1.md` | Load Test (50 Users) | **Needs Follow-up / TBD** |
+| **NFR-02** | ระบบต้องจัดเก็บเฉพาะข้อมูลจำเป็น โดยไม่เก็บข้อมูลประวัติการแพ้อาหาร | การบันทึกข้อมูลคำสั่งซื้อเข้าสู่ระบบ | ไม่พบฟิลด์เก็บข้อมูลสุขภาพ/แพ้อาหาร | `02-stakeholder-context-scope.md` | Audit Inspection | **Needs Follow-up / TBD** |
 
 ## 6. Data Requirements
 
 ส่วนนี้เป็น conceptual data requirement ยังไม่ใช่ physical database schema
 
-| DR | Concept | Requirement/minimum data | Relationships | Classification | Source | Status |
-|---|---|---|---|---|---|---|
-| `[DR-xx]` | `[concept]` | `[meaning + minimum data]` | `[concept links]` | `[class]` | `[IDs]` | Ready / TBD |
+| DR | Concept | Requirement / Minimum Data | Relationships | Classification | Source | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **DR-01** | **Customer Order** | ข้อมูลคำสั่งซื้อที่ลูกค้าส่งเข้าระบบ (`Order ID`, `Order Timestamp`, `Current Status`, `Queue Number`) | 1:1 กับ `Queue Token`, Many:1 กับ `Food Stall` | Internal Domain | `RC-01`, `RC-03` | **Ready / Covered** |
+| **DR-02** | **Queue Token** | ตัวแทนลำดับคิวและสถานะออเดอร์ปัจจุบัน (`Queue Number`, `Sequence Position`, `Last Status Change Time`) | 1:1 กับ `Customer Order` | Internal Domain | `RC-01` | **Ready / Covered** |
+| **DR-03** | **Food Stall** | ข้อมูลร้านอาหารที่ลงทะเบียนใช้งานระบบ (`Stall ID`, `Stall Name`, `Operational Status`) | 1:Many กับ `Customer Order`, 1:Many กับ `Menu Item` | Master Data | `02-stakeholder-context-scope.md` | **Ready / Covered** |
+| **DR-04** | **Menu Item** | รายการอาหารที่เปิดให้บริการสั่งซื้อ (`Menu ID`, `Menu Name`, `Stock Availability`) | Many:1 กับ `Food Stall` | Master Data | `RC-05` | **Ready / Covered** |
+| **DR-05** | **Queue Density Report** | สรุปข้อมูลสถิติปริมาณคิวและความหนาแน่น (`Time Interval`, `Total Order Volume`, `Average Wait Duration`) | Aggregated จาก `Customer Order` และ `Food Stall` | Derived Report | `02: Data Flow` | **Ready / Covered** |
+
+##  รายละเอียด
+
+### DR-01: Customer Order (ข้อมูลคำสั่งซื้อ)
+* **ความหมายทางธุรกิจ**: สิ่งแทนรายการสั่งซื้ออาหารที่ลูกค้าส่งเข้าระบบ เพื่อขอรับบริการคิวและติดตามสถานะการปรุงอาหาร
+* **ข้อมูลขั้นต่ำที่จำเป็น (Minimum Data)**: `Order ID` (รหัสคำสั่งซื้อ), `Order Timestamp` (เวลาที่สั่งซื้อ), `Current Status` (`New`, `Cooking`, `Ready`, `Completed`, `Cancelled`), `Queue Number` (หมายเลขคิว)
+* **ความสัมพันธ์ (Relationships)**: สัมพันธ์แบบ 1:1 กับ Queue Token (`DR-02`), แบบ Many:1 กับ Food Stall (`DR-03`) และแบบ 1:Many กับ Order Item
+* **ประเภทข้อมูล (Classification)**: Internal Domain Data
+* **แหล่งที่มา (Source)**: `RC-01`, `RC-03`
+
+### DR-02: Queue Token (คิวและสถานะ)
+* **ความหมายทางธุรกิจ**: ตัวแทนลำดับคิวและสถานะออเดอร์ ณ เวลาปัจจุบัน สำหรับใช้จัดลำดับการปรุงอาหารฝั่งพนักงาน และแสดงผลการแจ้งเตือนฝั่งลูกค้า
+* **ข้อมูลขั้นต่ำที่จำเป็น (Minimum Data)**: `Queue Number` (หมายเลขคิวประจำวัน), `Sequence Position` (ลำดับแถวคิว FIFO), `Last Status Change Time` (เวลาอัปเดตสถานะล่าสุด)
+* **ความสัมพันธ์ (Relationships)**: สัมพันธ์แบบ 1:1 กับ Customer Order (`DR-01`)
+* **ประเภทข้อมูล (Classification)**: Internal Domain Data
+* **แหล่งที่มา (Source)**: `RC-01`
+
+### DR-03: Food Stall (ข้อมูลร้านค้า)
+* **ความหมายทางธุรกิจ**: ร้านอาหารภายในโรงอาหารที่ลงทะเบียนใช้งานระบบ เพื่อรับคำสั่งซื้อ จัดลำดับคิว และอัปเดตสถานะอาหาร
+* **ข้อมูลขั้นต่ำที่จำเป็น (Minimum Data)**: `Stall ID` (รหัสประจำร้าน), `Stall Name` (ชื่อร้านค้า), `Operational Status` (สถานะการเปิด/ปิดรับคิว)
+* **ความสัมพันธ์ (Relationships)**: สัมพันธ์แบบ 1:Many กับ Customer Order (`DR-01`) และแบบ 1:Many กับ Menu Item (`DR-04`)
+* **ประเภทข้อมูล (Classification)**: Master Data
+* **แหล่งที่มา (Source)**: `02-stakeholder-context-scope.md`
+
+### DR-04: Menu Item (รายการอาหาร)
+* **ความหมายทางธุรกิจ**: รายการเมนูอาหารที่ร้านค้าเปิดให้บริการสั่งซื้อ พร้อมสถานะความพร้อมของวัตถุดิบหน้าร้าน
+* **ข้อมูลขั้นต่ำที่จำเป็น (Minimum Data)**: `Menu ID` (รหัสรายการอาหาร), `Menu Name` (ชื่อเมนู), `Stock Availability` (`In-Stock`, `Out-of-Stock`)
+* **ความสัมพันธ์ (Relationships)**: สัมพันธ์แบบ Many:1 กับ Food Stall (`DR-03`)
+* **ประเภทข้อมูล (Classification)**: Master Data
+* **แหล่งที่มา (Source)**: `RC-05`
+
+### DR-05: Queue Density Report (รายงานสถิติความหนาแน่นคิว)
+* **ความหมายทางธุรกิจ**: ข้อมูลสรุปสถิติปริมาณคิวและเวลารอเฉลี่ยรายชั่วโมง สำหรับให้ผู้ดูแลพื้นที่อาหารใช้พิจารณาบริหารจัดการพื้นที่โรงอาหารส่วนกลาง
+* **ข้อมูลขั้นต่ำที่จำเป็น (Minimum Data)**: `Time Interval` (ช่วงเวลาสังเกตการณ์), `Total Order Volume` (จำนวนออเดอร์รวมช่วงเวลา), `Average Wait Duration` (ประวัติเวลารอเฉลี่ยจริง)
+* **ความสัมพันธ์ (Relationships)**: ข้อมูลสรุประดับรวม (Aggregated Data) จาก Customer Order (`DR-01`) และ Food Stall (`DR-03`)
+* **ประเภทข้อมูล (Classification)**: Derived Report
+* **แหล่งที่มา (Source)**: `02: Data Flow`
 
 ## 7. Behavioral Model References
 
-| Model | IDs/version | Requirement anchors | Coverage/gap | SRS use |
-|---|---|---|---|---|
-| User Stories | `[US-*]` | `[W05 IDs]` | `[coverage]` | `[section]` |
-| Use Cases | `[UC-*]` | `[W05 IDs]` | `[level/gap]` | `[section]` |
-| Acceptance Criteria | `[AC-*]` | `[W05 IDs]` | `[coverage]` | `[verification]` |
+| Model | IDs / Version | Requirement Anchors | Coverage / Gap | SRS Use |
+| :--- | :--- | :--- | :--- | :--- |
+| **User Stories** | US-01..US-08, US-10, US-11  | FR-01, FR-03, FR-04, FR-06, BR-01, NFR-03 | Covered  | Section 3, Section 4, Section 5 |
+| **Use Cases** | UC-01,UC-04  | FR-01, FR-03, FR-04, FR-06, BR-01, NFR-03 | Covered  | Section 3, Section 4, Section 5 |
+| **Acceptance Criteria**| AC-01,AC-05  | FR-01, FR-03, FR-04, FR-06, BR-01, NFR-03 | Covered  | Section 11  |
 
 ### 7.1 Lifecycle Rules
 
-| From | Trigger | To | Guard/result | Source |
-|---|---|---|---|---|
-| `[state]` | `[event]` | `[state]` | `[guard]` | `[ID]` |
+| From State | Trigger Event | To State | Guard Condition / Rule | Source |
+| :--- | :--- | :--- | :--- | :--- |
+| None | ลูกค้าส่งคำสั่งซื้อสำเร็จ | New | ข้อมูลรายการอาหารครบถ้วน | FR-01 |
+| New | ลูกค้าสแกน/กดปุ่มขอยกเลิก | Cancelled | สถานะปัจจุบันใน DB ยังไม่เป็น Cooking (BR-01) | FR-03, BR-01 |
+| New | พนักงานกดเริ่มทำอาหารหน้าเตา | Cooking | พนักงานสแกนหรือสัมผัสเลือกออเดอร์ | FR-04, NFR-03 |
+| Cooking | พนักงานปรุงอาหารเสร็จและวางจุดส่งมอบ | Ready | ออเดอร์ผ่านสถานะ Cooking เรียบร้อย | FR-01, NFR-01 |
+| Ready | พนักงานยื่นอาหารให้ลูกค้า | Completed | หมายเลขคิวฝั่งลูกค้าตรงกับออเดอร์ | FR-01 |
 
 ## 8. External Interface Requirements
 
 | Interface | Requirement/data | Direction | Owner | Failure/privacy concern | Status |
 |---|---|---|---|---|---|
-| `[EXT-xx]` | `[what]` | `[in/out]` | `[owner]` | `[concern]` | Core / Extension / TBD |
+| **EXT-01** (Web Push Notification)| สัญญาณแจ้งเตือนอัปเดตสถานะคิวเป็น `พร้อมรับ` | Outbound | Dev Team | การหลุดเชื่อมต่อของสัญญาณเครือข่ายมือถือ | Core Scope |
+|**EXT-02** (Stall Display Panel) | รายการคิวเรียงลำดับ FIFO และปุ่มกดเปลี่ยนสถานะ | Bi-directional | Dev Team | อุปกรณ์ฝั่งร้านค้าค้างหรือสัมผัสไม่ติดช่วงเร่งด่วน | Core Scope |
 
 ## 9. Traceability and Coverage
 
-| Source | W05 requirement | W06 model | SRS section | Verification | Coverage |
-|---|---|---|---|---|---|
-| `[F/E/TD]` | `[FR/BR/NFR/DR]` | `[US/UC/AC]` | `[หัวข้อ ]` | `[VF/method]` | Covered / Partial |
-
+| Source Evidence | W05 Requirement | W06 Behavioral Model | SRS Section | Verification ID | Coverage Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| `RC-01`, `E-07`, `PP-01` | `FR-01` (Must) | `US-01`, `UC-01`, `AC-01` | Section 3.2 | `VF-01` | **Covered** |
+| `RC-04`, `E-01`, `E-03` | `FR-04` (Must) | `US-02`..`06`, `UC-02`, `AC-02` | Section 3.2 | `VF-02` | **Covered** |
+| `RC-03`, `E-08` | `FR-03` (Should) | `US-10`, `UC-04`, `AC-05` | Section 3.2 | `VF-03` | **Covered** |
+| `E-05`, `C-01` | `BR-01` (Must) | `US-11`, `UC-04`, `AC-05` | Section 4 | `VF-03` | **Covered** |
+| `02: Data Flow` | `FR-06` (Could) | `US-05`, `US-07`, `UC-03`, `AC-03` | Section 3.2 | `VF-05` | **Covered** |
+| `01: Sect 9` | `NFR-03` (Should) | `US-08`, `UC-02`, `AC-04` | Section 5 | `VF-04` | **Covered** |
+| `RC-02`, `E-06` | `FR-02` (Must) | -| Section 10 | `ISS-01` | **Partial / TBD** |
+| `RC-05`, `E-02` | `FR-05` (Should) | -| Section 10 | `ISS-02` | **Partial / TBD** |
 ## 10. Open Issues
 
 | OI | Question/TBD | Affected IDs | Owner | Next action | Expected evidence | Needed by |
