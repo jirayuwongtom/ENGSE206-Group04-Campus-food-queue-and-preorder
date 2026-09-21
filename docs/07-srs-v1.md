@@ -275,21 +275,27 @@
 
 | OI | Question/TBD | Affected IDs | Owner | Next action | Expected evidence | Needed by |
 |---|---|---|---|---|---|---|
-| `[OI-xx]` | `[unknown]` | `[IDs]` | `[role]` | `[action]` | `[evidence]` | `[milestone]` |
-
+| **ISS-01** | การยืนยันสูตรประเมินเวลารอคิวที่คลาดเคลื่อนไม่เกิน 5 นาที | `FR-02` | Tech Lead | เก็บสถิติเวลาทำอาหารจริงหน้าเตาเพื่อสร้างสูตรคำนวณ | ผลการทดสอบสูตรคำนวณ | - |
+| **ISS-02** | การทดสอบความเร็วการแจ้งเตือนเมนูหมดแบบ Real-time (ภายใน 3) | `FR-05`, `NFR-01` | Backend Dev | ทดสอบการส่งข้อมูลผ่าน WebSocket/SSE กำลังโหลด | รายงานผล Load Test 50 Users | - |
+| **ISS-03** | การสรุป Privacy Policy และเกณฑ์ Data Retention | `NFR-02` | Compliance | ร่างข้อตกลงความเป็นส่วนตัวเรื่องการไม่เก็บประวัติแพ้อาหาร | เอกสาร Privacy Policy | - |
+| **ISS-04** | รูปแบบรายงานสถิติเพิ่มเติมที่ผู้ดูแลพื้นที่ต้องการ | `FR-06` | BA | สอบถามผู้ดูแลพื้นที่เรื่องการ Export ไฟล์เพิ่มเติม | สรุปผลสัมภาษณ์ผู้ดูแลพื้นที่ | - |
 ## 11. Verification Plan
 
-| VF | Method | Target IDs | Procedure/evidence | Owner | Status |
-|---|---|---|---|---|---|
-| `[VF-xx]` | Review / Demo / Test / Analysis / Inspection | `[IDs]` | `[how/evidence]` | `[owner]` | Planned |
+| VF ID | Method | Target IDs | Procedure / Evidence | Owner | Status |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| **VF-01** | Demonstration | `FR-01` | **Procedure**: พนักงานกดเปลี่ยนสถานะเป็น `Ready` บนหน้าจอฝั่งร้านค้า <br>**Pass Criteria**: หน้าจอลูกค้าอัปเดตสถานะตรงกันและส่งสัญญาณแจ้งเตือน | QA Tester | Planned |
+| **VF-02** | Inspection | `FR-04` | **Procedure**: ป้อนออเดอร์ทดสอบต่างเวลากันเข้าสู่ระบบ <br>**Pass Criteria**: หน้าจอพนักงานแสดงรายการคิวเรียงลำดับเวลาจากเก่าไปใหม่ถูกต้อง | QA Tester | Planned |
+| **VF-03** | Boundary Test | `FR-03`, `BR-01` | **Procedure**: ทดสอบกดยกเลิกในสถานะ `New` และสถานะ `Cooking` <br>**Pass Criteria**: ยกเลิกสำเร็จในสถานะ `New` และถูกปฏิเสธ/ล็อกปุ่มในสถานะ `Cooking` | QA Tester | Planned |
+| **VF-04** | Usability Test | `NFR-03` | **Procedure**: ทดสอบการกดเปลี่ยนสถานะออเดอร์หน้าเตาของพนักงาน <br>**Pass Criteria**: ดำเนินการเปลี่ยนสถานะได้สำเร็จโดยใช้การสัมผัส/คลิกหน้าจอ มากว่าหรือเท่ากับ 2 ครั้ง | UX Designer | Planned |
+| **VF-05** | Data Inspection | `FR-06` | **Procedure**: เรียกดูรายงานสถิติตามช่วงเวลาบนหน้าจอแอดมิน <br>**Pass Criteria**: ระบบแสดงกราฟ/ตารางสรุปปริมาณคิวตรงตามประวัติคำสั่งซื้อสะสม | BA | Planned |
 
 ## 12. Review Gate
 
-- [ ] W05 FR/BR/NFR/DR ทุกข้อมี disposition
-- [ ] W06 US/UC/AC ย้อนกลับ W05 ได้
-- [ ] Partial/Extension/TBD มองเห็น
-- [ ] Open Issue ทุกข้อมี owner/action/evidence
-- [ ] Status ยังเป็น Baseline Candidate
+- [x] W05 FR/BR/NFR/DR ทุกข้อมี disposition
+- [x] W06 US/UC/AC ย้อนกลับ W05 ได้
+- [x] Partial/Extension/TBD มองเห็น
+- [x] Open Issue ทุกข้อมี owner/action/evidence
+- [x] Status ยังเป็น Baseline Candidate
 
 ## Appendix A — Requirement Disposition
 
