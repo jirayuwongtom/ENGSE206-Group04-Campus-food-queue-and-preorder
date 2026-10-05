@@ -26,43 +26,31 @@
 ---
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## 3. Container diagram (C4 ระดับ 2)
-
-| Component | Responsibilities | Inputs/Outputs | Related Requirements |
-|---|---|---|---|
-| [Component] | [กรอก] | [กรอก] | FR-xx |
 
 ## 4. ชนิดและสภาพแวดล้อมของ container
 
-| Dependency | Purpose | Risks / Constraints | Related Design Decision |
-|---|---|---|---|
-| [กรอก] | [กรอก] | [กรอก] | D-xx |
-
 ## 5. NFR กระทบ container ไหน
-
-- [เหตุผลที่เลือก architecture นี้]
-- [ข้อดี/ข้อจำกัด]
 
 ## 6. Decision cards
 
-- [เช่น การออกแบบนี้ช่วยให้ข้อมูลการจองไม่ซ้ำกันได้อย่างไร?]
-- [เช่น ผู้ใช้บนมือถือเข้าถึงได้อย่างไร?]
-
 ## 7. เดิน Spine บน container diagram
+
 ## 8. Open decisions ที่กระทบ container
+
 ## 9. ส่งต่อ W12 และ W13
+
 ## 10. Done checklist W11
+[ ]  Context diagram: ระบบ 1 กล่อง + actor ครบ (ACT-01–04) + ระบบภายนอกพร้อมป้าย Core / Extension / TBD
+
+[ ]  Container diagram: ทุก container มีชื่อ + [ชนิด · เทคโนโลยี] + หน้าที่; ลูกศรทุกเส้นบอกว่าส่งอะไร
+
+[ ]  ตาราง container บอกสภาพแวดล้อม (รันที่ไหน ใครควบคุม) และข้อมูลที่เก็บ
+
+[ ]  NFR ทุกข้อชี้ได้ว่ากระทบ container ไหน หรือเป็น TBD; decision card 3 ใบ อ้าง NFR/driver
+
+[ ]  ทุกขั้น Build now/Overview ใน Spine เดินผ่าน container ได้ และกติกา D1–D3 อยู่ฝั่ง server
+
+[ ]  ใช้ stack อ้างอิง (ไม่เปลี่ยน); ไม่มีเทคโนโลยีเกินจำเป็น; ทุกภาพมี .drawio + PNG
+
 ## 11. AI use และ Team worklog
