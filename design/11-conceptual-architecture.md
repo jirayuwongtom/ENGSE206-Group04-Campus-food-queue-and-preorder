@@ -11,28 +11,58 @@
 | **Design Spine** | เส้นทางคำขอหนึ่งใบ 6 ขั้น (ขั้น 1–6 Build now) | เดินทดสอบ container diagram (หัวข้อ 7) |
 | **Open decisions** | OD-01 ถึง OD-04 | ติดป้าย TBD บนภาพ (หัวข้อ 8) |
 
-## 2. Architecture View
+## 2. System Context (C4 ระดับ 1)
 
-![Conceptual Architecture](../diagrams/architecture/conceptual-architecture.png)
+| ID | ชื่อ | ส่งเข้าระบบ | รับจากระบบ | สถานะในรุ่นแรก |
+| :--- | :--- | :--- | :--- | :--- |
+| **ACT-01** | นักศึกษา / ลูกค้า | สั่งอาหาร , คำขอยกเลิกการสั่งอาหาร | หมายเลขคิว , สถานะอาหาร | Core |
+| **ACT-02** | พนักงานร้าน | การกดเปลี่ยนสถานะ | ลำดับคิว FIFO | Core |
+| **ACT-03** | เจ้าของร้าน | การจัดการเมนู | ภาพรวมคิวและภาระงาน | หน้าจอเจ้าของร้าน = Later / TBD — รุ่นแรกใช้ข้อมูลเมนูตั้งต้น และ BR-01 เป็นกติกาคงที่ |
+| **ACT-04** | ผู้ดูแลพื้นที่อาหาร | รายงานความหนาแน่นของคิว | ผลรายงานความหนาแน่นของคิว | Overview (UC-03 , FR-06 Could) |
+| **EXT-01** | สัญญาณแจ้งเตือนอัปเดตสถานะคิวเป็น พร้อมรับ | แจ้งเตือน "พร้อมรับ" ให้ผู้ใช้ทราบ | คำขอส่งว่า ออเดอร์ไหน พร้อมรับ | Core boundary; provider |
+| **EXT-02** | รายการคิวเรียงลำดับ FIFO และปุ่มกดเปลี่ยนสถานะ | คำขอเปลี่ยนสถานะ | รายการคิว FIFO | Core — เป็นอุปกรณ์หน้าเตาที่พนักงาน (ACT-02) ใช้เปิด |
+---
+![alt text](<../diagrams/architecture/System Context (C4 level 1).png>)
+---
 
-## 3. Components / Modules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 3. Container diagram (C4 ระดับ 2)
 
 | Component | Responsibilities | Inputs/Outputs | Related Requirements |
 |---|---|---|---|
 | [Component] | [กรอก] | [กรอก] | FR-xx |
 
-## 4. Data and External Dependencies
+## 4. ชนิดและสภาพแวดล้อมของ container
 
 | Dependency | Purpose | Risks / Constraints | Related Design Decision |
 |---|---|---|---|
 | [กรอก] | [กรอก] | [กรอก] | D-xx |
 
-## 5. Architecture Rationale
+## 5. NFR กระทบ container ไหน
 
 - [เหตุผลที่เลือก architecture นี้]
 - [ข้อดี/ข้อจำกัด]
 
-## 6. Quality Attribute Evaluation Questions
+## 6. Decision cards
 
 - [เช่น การออกแบบนี้ช่วยให้ข้อมูลการจองไม่ซ้ำกันได้อย่างไร?]
 - [เช่น ผู้ใช้บนมือถือเข้าถึงได้อย่างไร?]
+
+## 7. เดิน Spine บน container diagram
+## 8. Open decisions ที่กระทบ container
+## 9. ส่งต่อ W12 และ W13
+## 10. Done checklist W11
+## 11. AI use และ Team worklog
