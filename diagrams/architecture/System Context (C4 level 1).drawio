@@ -1,0 +1,223 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="w11-02-crbs-context-c4-level1" id="w11-02-crbs-context-c4-level1">
+    <mxGraphModel dx="2800" dy="1458" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1720" pageHeight="810" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="c1" parent="1" style="rounded=1;arcSize=4;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=#F1F7FA;strokeColor=#173B65;strokeWidth=4;dashed=0;" value="" vertex="1">
+          <mxGeometry height="650" width="430" x="720" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c2" parent="1" style="rounded=1;arcSize=18;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=#173B65;strokeColor=#173B65;strokeWidth=1;dashed=0;" value="" vertex="1">
+          <mxGeometry height="100" width="430" x="720" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="c3" parent="1" style="rounded=0;arcSize=1;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=#173B65;strokeColor=#173B65;strokeWidth=1;dashed=0;" value="" vertex="1">
+          <mxGeometry height="36" width="430" x="720" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="c4" parent="1" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=42;fontColor=#FFFFFF;fontStyle=1;spacing=0;spacingTop=-2;" value="CFQP" vertex="1">
+          <mxGeometry height="54.6" width="438" x="720" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="c5" parent="1" style="text;html=1;align=center;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#DCE8F2;fontStyle=0;spacing=0;spacingTop=-2;" value="Campus Food Queue and Preorder System" vertex="1">
+          <mxGeometry height="31.2" width="438" x="720" y="92" as="geometry" />
+        </mxCell>
+        <mxCell id="c6" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=27;fontColor=#173B65;fontStyle=1;spacing=0;spacingTop=-2;" value="ระบบรับผิดชอบ" vertex="1">
+          <mxGeometry height="35.1" width="127" x="742" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="c7" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008699;strokeColor=#008699;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="748" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="c8" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="คำสั่งซื้อ , หมายเลขคิว , สถานะออเดอร์" vertex="1">
+          <mxGeometry height="32.5" width="372" x="768" y="196" as="geometry" />
+        </mxCell>
+        <mxCell id="c9" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008699;strokeColor=#008699;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="748" y="253" as="geometry" />
+        </mxCell>
+        <mxCell id="c10" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="จัดลำดับของคิวตามการรับออเดอร์" vertex="1">
+          <mxGeometry height="32.5" width="372" x="768" y="244" as="geometry" />
+        </mxCell>
+        <mxCell id="c11" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008699;strokeColor=#008699;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="748" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="c12" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="กติกา Cut-off&amp;nbsp;" vertex="1">
+          <mxGeometry height="32.5" width="372" x="768" y="292" as="geometry" />
+        </mxCell>
+        <mxCell id="c13" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008699;strokeColor=#008699;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="748" y="349" as="geometry" />
+        </mxCell>
+        <mxCell id="c14" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="แจ้งเตือนผู้ใช้เมื่อพร้อมรับ" vertex="1">
+          <mxGeometry height="32.5" width="372" x="768" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="c15" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#008699;strokeColor=#008699;strokeWidth=1;" value="" vertex="1">
+          <mxGeometry height="12" width="12" x="748" y="397" as="geometry" />
+        </mxCell>
+        <mxCell id="c16" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="รายงานความหนาแน่นของคิว" vertex="1">
+          <mxGeometry height="32.5" width="372" x="768" y="388" as="geometry" />
+        </mxCell>
+        <mxCell id="c17" parent="1" style="rounded=1;arcSize=6;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#C9D3DC;strokeWidth=1.5;dashed=0;" value="" vertex="1">
+          <mxGeometry height="154" width="386" x="742" y="504" as="geometry" />
+        </mxCell>
+        <mxCell id="c18" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=23;fontColor=#526579;fontStyle=1;spacing=0;spacingTop=-2;" value="ไม่อยู่ในความรับผิดชอบ" vertex="1">
+          <mxGeometry height="29.9" width="158.2" x="754" y="516" as="geometry" />
+        </mxCell>
+        <mxCell id="c19" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="ระบบจัดส่งอาหาร ,&amp;nbsp;การเก็บข้อมูลสุขภาพละเอียด เช่น ประวัติแพ้อาหาร ,&amp;nbsp;ระบบชำระเงินออนไลน์ ,&amp;nbsp;ระบบแทรกคิวอัตโนมัติตามประเภทเมนู" vertex="1">
+          <mxGeometry height="84.9" width="368" x="754" y="552" as="geometry" />
+        </mxCell>
+        <mxCell id="c20" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" value="" vertex="1">
+          <mxGeometry height="84.9" width="39.7" x="42.2" y="75.3" as="geometry" />
+        </mxCell>
+        <mxCell id="c21" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#087E8B;fontStyle=1;spacing=0;spacingTop=-2;" value="ACT-01" vertex="1">
+          <mxGeometry height="28.6" width="58.3" x="106" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="c22" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=27;fontColor=#172333;fontStyle=1;spacing=0;spacingTop=-2;" value="นักศึกษา / ลูกค้า" vertex="1">
+          <mxGeometry height="35.1" width="238" x="106" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="c24" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="120" as="sourcePoint" />
+            <mxPoint x="716" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c25" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="ส่ง: สั่งอาหาร , คำขอยกเลิกการสั่งอาหาร" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="c26" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="รับ: หมายเลขคิว , สถานะอาหาร" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="129" as="geometry" />
+        </mxCell>
+        <mxCell id="c28" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#087E8B;fontStyle=1;spacing=0;spacingTop=-2;" value="ACT-02" vertex="1">
+          <mxGeometry height="28.6" width="58.3" x="106" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="c29" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=27;fontColor=#172333;fontStyle=1;spacing=0;spacingTop=-2;" value="พนักงานร้านค้า" vertex="1">
+          <mxGeometry height="35.1" width="238" x="106" y="268" as="geometry" />
+        </mxCell>
+        <mxCell id="c31" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="290" as="sourcePoint" />
+            <mxPoint x="716" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c32" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="ส่ง: การกดเปลี่ยนสถานะ&amp;nbsp;" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="c33" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="รับ: ลำดับคิว FIFO" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="299" as="geometry" />
+        </mxCell>
+        <mxCell id="c35" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#087E8B;fontStyle=1;spacing=0;spacingTop=-2;" value="ACT-03" vertex="1">
+          <mxGeometry height="28.6" width="58.3" x="106" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="c36" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=27;fontColor=#172333;fontStyle=1;spacing=0;spacingTop=-2;" value="เจ้าของร้านค้า" vertex="1">
+          <mxGeometry height="35.1" width="238" x="106" y="438" as="geometry" />
+        </mxCell>
+        <mxCell id="c41" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="ส่ง: การจัดการเมนู" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="c42" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="รับ: ภาพรวมคิวและภาระงาน" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="469" as="geometry" />
+        </mxCell>
+        <mxCell id="c44" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#087E8B;fontStyle=1;spacing=0;spacingTop=-2;" value="ACT-04" vertex="1">
+          <mxGeometry height="28.6" width="58.3" x="106" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="c45" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=27;fontColor=#172333;fontStyle=1;spacing=0;spacingTop=-2;" value="ผู้ดูแลพื้นที่อาหาร" vertex="1">
+          <mxGeometry height="35.1" width="238" x="106" y="598" as="geometry" />
+        </mxCell>
+        <mxCell id="c47" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="620" as="sourcePoint" />
+            <mxPoint x="716" y="620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c48" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="ส่ง: รายงานความหนาแน่นของคิว" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="582" as="geometry" />
+        </mxCell>
+        <mxCell id="c49" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="รับ: ผลรายงานความหนาแน่นของคิว" vertex="1">
+          <mxGeometry height="31.2" width="358" x="358" y="629" as="geometry" />
+        </mxCell>
+        <mxCell id="c74" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=23;fontColor=#173B65;fontStyle=1;spacing=0;spacingTop=-2;" value="C4 ระดับ 1 — System Context" vertex="1">
+          <mxGeometry height="29.9" width="223.3" x="26" y="716" as="geometry" />
+        </mxCell>
+        <mxCell id="c75" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=none;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="289.296875" y="729.2" as="sourcePoint" />
+            <mxPoint x="339.296875" y="729.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c76" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="Core (ใช้ในรุ่นแรก)" vertex="1">
+          <mxGeometry height="28.6" width="119" x="345.3" y="716" as="geometry" />
+        </mxCell>
+        <mxCell id="c77" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#D89715;strokeWidth=3;dashed=1;endArrow=block;endFill=1;startArrow=none;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="496.34375" y="729.2" as="sourcePoint" />
+            <mxPoint x="546.34375" y="729.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c78" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="ยังไม่ตัดสิน (TBD)" vertex="1">
+          <mxGeometry height="28.6" width="111" x="552.3" y="716" as="geometry" />
+        </mxCell>
+        <mxCell id="c79" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#8A99A8;strokeWidth=3;dashed=1;endArrow=block;endFill=1;startArrow=none;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="695.328125" y="729.2" as="sourcePoint" />
+            <mxPoint x="745.328125" y="729.2" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="c80" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=22;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="Extension (ไม่อยู่ในรุ่นแรก)" vertex="1">
+          <mxGeometry height="28.6" width="169.7" x="751.3" y="716" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-1" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#D89715;strokeWidth=3;dashed=1;endArrow=block;endFill=1;startArrow=block;startFill=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="360" y="450" as="sourcePoint" />
+            <mxPoint x="713.49" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-7" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="120" width="240" x="1480" y="361" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-3" parent="M_Bz0IVZpbRTIoQlsb4K-7" style="rounded=1;arcSize=7;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2.5;" value="" vertex="1">
+          <mxGeometry height="120" width="240" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-6" parent="M_Bz0IVZpbRTIoQlsb4K-7" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=1;spacing=0;spacingTop=-2;" value="EXT-01&lt;div&gt;สัญญาณแจ้งเตือนอัปเดตสถานะคิวเป็น พร้อมรับ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="222" x="18" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-13" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" value="" vertex="1">
+          <mxGeometry height="84.9" width="39.7" x="42.2" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-14" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" value="" vertex="1">
+          <mxGeometry height="84.9" width="39.7" x="40" y="411" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-15" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;html=1;fillColor=#173B65;strokeColor=#173B65;" value="" vertex="1">
+          <mxGeometry height="84.9" width="39.7" x="42.2" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-16" connectable="0" parent="1" style="group" value="" vertex="1">
+          <mxGeometry height="120" width="240" x="1480" y="160.2" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-17" parent="M_Bz0IVZpbRTIoQlsb4K-16" style="rounded=1;arcSize=7;absoluteArcSize=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2.5;" value="" vertex="1">
+          <mxGeometry height="120" width="240" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-18" parent="M_Bz0IVZpbRTIoQlsb4K-16" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=25;fontColor=#172333;fontStyle=1;spacing=0;spacingTop=-2;" value="EXT-02&lt;div&gt;รายการคิวเรียงลำดับ FIFO และปุ่มกดเปลี่ยนสถานะ&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="222" x="18" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-19" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=block;startFill=1;entryX=-0.011;entryY=0.44;entryDx=0;entryDy=0;entryPerimeter=0;" target="M_Bz0IVZpbRTIoQlsb4K-17">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="212.8" as="sourcePoint" />
+            <mxPoint x="1400" y="212.52" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-20" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="ส่ง: คำขอเปลี่ยนสถานะ" vertex="1">
+          <mxGeometry height="31.2" width="320" x="1200" y="173.8" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-21" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="รับ: รายการคิว FIFO" vertex="1">
+          <mxGeometry height="31.2" width="320" x="1200" y="220.8" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-22" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#173B65;strokeWidth=3;dashed=0;endArrow=block;endFill=1;startArrow=block;startFill=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="M_Bz0IVZpbRTIoQlsb4K-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1150" y="420.9" as="sourcePoint" />
+            <mxPoint x="1400" y="420.62" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-23" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#172333;fontStyle=0;spacing=0;spacingTop=-2;" value="ส่ง: แจ้งเตือน &quot;พร้อมรับ&quot; ให้ผู้ใช้ทราบ" vertex="1">
+          <mxGeometry height="31.2" width="320" x="1200" y="381.9" as="geometry" />
+        </mxCell>
+        <mxCell id="M_Bz0IVZpbRTIoQlsb4K-24" parent="1" style="text;html=1;align=left;verticalAlign=top;whiteSpace=wrap;fontFamily=TH Sarabun New;fontSize=24;fontColor=#526579;fontStyle=0;spacing=0;spacingTop=-2;" value="รับ:&amp;nbsp;&lt;span style=&quot;color: rgb(23, 35, 51);&quot;&gt;คำขอส่งว่า ออเดอร์ไหน พร้อมรับ&lt;/span&gt;" vertex="1">
+          <mxGeometry height="31.2" width="320" x="1200" y="428.9" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
