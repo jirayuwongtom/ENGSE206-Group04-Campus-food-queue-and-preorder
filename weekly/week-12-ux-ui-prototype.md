@@ -1,4 +1,10 @@
 # Week 12 — UX/UI Prototype and Accessibility
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-12-ux-ui-prototype/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-12-ux-ui-prototype/assignment-contract.md
+- ส่งงานที่: [`submissions/week-12-submission.md`](../submissions/week-12-submission.md)
+- Expected paths: `design/12-ux-ui-prototype.md`, `diagrams/ui-flow/`, `assets/prototype-exports/`, `submissions/week-12-submission.md`
 
 ## เป้าหมาย
 

@@ -1,4 +1,10 @@
 # Week 11 — Conceptual Architecture Studio
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-11-conceptual-architecture/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-11-conceptual-architecture/assignment-contract.md
+- ส่งงานที่: [`submissions/week-11-submission.md`](../submissions/week-11-submission.md)
+- Expected paths: `design/11-conceptual-architecture-v0.1.docx`, `diagrams/architecture/` (`11-context` · `11-container` .drawio + .png), `design/00-design-spine.md` (คอลัมน์ W11), `evidence/week-11/` (Miro ก่อน/หลัง), `submissions/week-11-submission.md`
 
 ## เป้าหมาย
 
@@ -6,7 +12,8 @@
 
 ## Artefact หลัก
 
-- [design/11-conceptual-architecture.md](../design/11-conceptual-architecture.md)
+- [design/11-conceptual-architecture-v0.1.docx](../design/11-conceptual-architecture-v0.1.docx)
+- [design/00-design-spine.md](../design/00-design-spine.md)
 
 ## Checklist
 

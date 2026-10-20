@@ -1,4 +1,10 @@
 # Week 13 — Detailed Design Studio
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-13-detailed-design/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-13-detailed-design/assignment-contract.md
+- ส่งงานที่: [`submissions/week-13-submission.md`](../submissions/week-13-submission.md)
+- Expected paths: `design/13-detailed-design.md`, `diagrams/sequence/`, `diagrams/erd/`, `diagrams/domain-model/`, `submissions/week-13-submission.md`
 
 ## เป้าหมาย
 

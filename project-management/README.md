@@ -8,3 +8,6 @@
 - `risk-and-issue-log.md` — ความเสี่ยงและปัญหาที่ต้องติดตาม
 - `backlog.md` — งานถัดไปของทีม
 - `ai-use-log.md` — บันทึกการใช้ AI ที่มีผลต่อชิ้นงาน
+
+- `course-sync-log.md` — บันทึก assignment version/URL ที่ทีมอ่านจาก Course Repo
+- `weekly-status.md` — dashboard สถานะและ feedback ของ 15 สัปดาห์เรียน

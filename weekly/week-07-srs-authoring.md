@@ -1,4 +1,10 @@
 # Week 07 — SRS Authoring Studio
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-07-srs-authoring/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-07-srs-authoring/assignment-contract.md
+- ส่งงานที่: [`submissions/week-07-submission.md`](../submissions/week-07-submission.md)
+- Expected paths: `docs/07-srs-v1.md`, `submissions/week-07-submission.md`
 
 ## เป้าหมาย
 

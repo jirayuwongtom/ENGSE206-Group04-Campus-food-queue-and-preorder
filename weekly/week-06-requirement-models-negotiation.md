@@ -1,4 +1,10 @@
 # Week 06 — Requirement Models and Negotiation
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-06-requirement-modeling-negotiation/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-06-requirement-modeling-negotiation/assignment-contract.md
+- ส่งงานที่: [`submissions/week-06-submission.md`](../submissions/week-06-submission.md)
+- Expected paths: `docs/06-requirement-models.md`, `diagrams/use-case/`, `diagrams/activity/`, `submissions/week-06-submission.md`
 
 ## เป้าหมาย
 

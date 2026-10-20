@@ -1,4 +1,10 @@
 # Week 10 — Design Strategy and Rationale
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-10-design-strategy/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-10-design-strategy/assignment-contract.md
+- ส่งงานที่: [`submissions/week-10-submission.md`](../submissions/week-10-submission.md)
+- Expected paths: `design/10-design-strategy.md`, `design/00-design-spine.md` (คอลัมน์ W10), `evidence/week-10/`, `submissions/week-10-submission.md`
 
 ## เป้าหมาย
 

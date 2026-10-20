@@ -9,10 +9,11 @@
 | 3 | Elicitation Plan | Interview guide + plan | [Week 03](week-03-elicitation-interview-design.md) |
 | 4 | Simulation, Evidence, Negotiation | Evidence log + issue list | [Week 04](week-04-simulation-evidence-negotiation.md) |
 | 5 | Analysis & Prioritization | Prioritized backlog | [Week 05](week-05-requirement-analysis-prioritization.md) |
+| 5b | Baseline Review | baseline-v1.0 + submission | `submissions/baseline-review-submission.md` |
 | 6 | Requirement Models | Use cases + acceptance criteria | [Week 06](week-06-requirement-models-negotiation.md) |
 | 7 | SRS Studio | SRS v1 | [Week 07](week-07-srs-authoring.md) |
 | 8 | Validation & Traceability | Review + traceability | [Week 08](week-08-validation-traceability.md) |
-| 9 | Midterm | Individual exam / snapshot | [Week 09](week-09-midterm.md) |
+| 9 | Midterm | งานกลุ่มใน `midterm/` + ข้อสอบรายบุคคล | [Week 09](week-09-midterm.md) |
 | 10 | Design Strategy | rationale + strategy | [Week 10](week-10-design-strategy.md) |
 | 11 | Conceptual Architecture | architecture view | [Week 11](week-11-conceptual-architecture.md) |
 | 12 | UX/UI Prototype | prototype + test plan | [Week 12](week-12-ux-ui-prototype.md) |

@@ -1,34 +1,28 @@
-# Week 03 — Elicitation Plan and Interview Design
+# Week 03 — Elicitation Planning and AI Interview Rehearsal
 
-## เป้าหมาย
+## READ
 
-[อธิบายโดยอาจารย์จาก ENGSE206 Course Repository / เอกสารสัปดาห์นี้]
+- Course instruction: `engse206-lab/weeks/week-03-elicitation-interview-design/README.md`
+- Assignment: `W03-v2.0`
+- Prompt Pack and Rubric from Course Repo
 
-## Artefact หลัก
+## WORK — 180 minutes
 
-- [docs/03-elicitation-plan.md](../docs/03-elicitation-plan.md)
+1. Select 3–5 Week 2 Open Questions.
+2. Create Elicitation Objectives.
+3. Complete [`docs/03-elicitation-plan.md`](../docs/03-elicitation-plan.md).
+4. Build 10–12 questions in [`docs/03-interview-guide.md`](../docs/03-interview-guide.md).
+5. Conduct bias check + peer critique.
+6. Rehearse with one AI role; save notes in `evidence/week-03/`.
+7. Revise questions, update worklog/AI log and present 3–5 minutes.
 
-## Checklist
+## SUBMIT
 
-- [ ] ระบุวัตถุประสงค์และวิธีเก็บความต้องการ
-- [ ] ออกแบบคำถามสัมภาษณ์/role-play ที่เชื่อมกับ pain points
-- [ ] กำหนดบทบาทผู้ทำกิจกรรมและหลักฐานที่จะเก็บ
-- [ ] ตรวจ privacy plan
+- [`submissions/week-03-submission.md`](../submissions/week-03-submission.md)
+- `checkpoint(w03): elicitation plan and interview rehearsal`
+- `submit(w03): elicitation plan interview guide and rehearsal`
 
-## หลักฐานที่ควรมี
+## Score
 
-- [ ] commit history ที่เห็นการมีส่วนร่วมของสมาชิก
-- [ ] worklog อัปเดตใน `project-management/team-worklog.md`
-- [ ] evidence/meeting note เมื่อกิจกรรมมีการเก็บข้อมูลหรือ review
-
-## Commit Message ตัวอย่าง
-
-```text
-docs: prepare elicitation plan and interview guide
-```
-
-## ก่อนส่ง
-
-- [ ] ตรวจ link และชื่อไฟล์
-- [ ] ให้เพื่อนในกลุ่ม review อย่างน้อย 1 คนเมื่อเป็น milestone สำคัญ
-- [ ] push ขึ้น remote repository แล้ว
+- A3 team = 3 points
+- A1 individual exit ticket = 2 points

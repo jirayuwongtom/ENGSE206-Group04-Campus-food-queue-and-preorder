@@ -1,4 +1,10 @@
 # Week 16 — Requirement-to-Design Showcase
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-16-project-showcase/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-16-project-showcase/assignment-contract.md
+- ส่งงานที่: [`submissions/week-16-submission.md`](../submissions/week-16-submission.md)
+- Expected paths: `final/`, `feedback/15-individual-reflection.md`, `submissions/week-16-submission.md`
 
 ## เป้าหมาย
 

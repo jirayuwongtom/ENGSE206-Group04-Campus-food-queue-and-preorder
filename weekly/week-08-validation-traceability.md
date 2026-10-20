@@ -1,4 +1,10 @@
 # Week 08 — SRS Validation, Traceability and Change
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-08-srs-validation-traceability/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-08-srs-validation-traceability/assignment-contract.md
+- ส่งงานที่: [`submissions/week-08-submission.md`](../submissions/week-08-submission.md)
+- Expected paths: `docs/08-validation-traceability.md`, `docs/requirements-change-log.md`, `final/midterm-snapshot/`, `submissions/week-08-submission.md`
 
 ## เป้าหมาย
 

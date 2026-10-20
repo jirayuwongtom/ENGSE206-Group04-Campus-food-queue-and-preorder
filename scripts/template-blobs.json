@@ -1,0 +1,591 @@
+{
+".gitattributes": [
+"fc62ff26b5bbba0ff63d7471269e964664abbb79"
+],
+".github/ISSUE_TEMPLATE/requirement-change.md": [
+"cb58d39979ab838aace6659673db73d3a39e283b"
+],
+".github/PULL_REQUEST_TEMPLATE.md": [
+"8d444eb1a354cc306beb46fea4b67314df73dfe3",
+"045b3df5ffb62b8869f10132cc7f38431b70cec0"
+],
+".gitignore": [
+"82d66a5e992cfc88d0418f2684d95bbaa87eee3c"
+],
+"CASE_CARD.md": [
+"1e0e11b6f0123544395fe187351088b45eea0330",
+"4c1e01481cf1051b59000b5de1ef8df1df88d060",
+"f0a2f82c68873c0b3d69b4d338acecc8fc36a172"
+],
+"CHANGELOG.md": [
+"e73de71d07fffd8ca7d8d0b7ec7ea54bbe1f506c"
+],
+"CONTRIBUTING.md": [
+"c9a07cfe38e051e3fa5c92e625e2c0f67c5f3172"
+],
+"COURSE_ALIGNMENT.md": [
+"7fb7f0508903245c55b17c0f297f3e3a2e0920ca",
+"94bdbc03bcdc565479953f57c1d77b74463564a8",
+"d1a0821093b98771b575889bef412a45339dd28c"
+],
+"COURSE_REPOSITORY.md": [
+"f616d8d5094aa1468fddbf182e580bcee7e562c6",
+"4708f9f09174d644c96c8e223b3d024cefad5770"
+],
+"GITHUB_SETUP.md": [
+"282152f853151a49ce84e8a93bffd296d354eb40"
+],
+"MANIFEST.md": [
+"b93ebd9732643bf58a27b8adff297fd1fbdeffab",
+"d091ac5094307a1441884c137753fa89c80b9e23"
+],
+"PROJECT_STATUS.md": [
+"9578b178d5b85cb275f4e87738105fb2b622894c"
+],
+"README.md": [
+"676098879edb8d72d4279c6d62ee70184a8cdd67",
+"b220b8c4d10a0aedc63121ced406c8973d3174f7",
+"79430f524e8c0f807b7a073cb5f93c6e5ff8eee6"
+],
+"STUDENT_SUBMISSION_GUIDE.md": [
+"9e572f3ea1e1ad4d314fb1a47d0f3dd0c4d5f5cd",
+"8ad9399b2369584ec89d5a1bf6666305bf2326a5"
+],
+"TEAM.md": [
+"77bb60c5f61f6802c422b4c012a32701878b5369",
+"b92742856afbf730d5d6de6677fe9c55eb53d517"
+],
+"TEMPLATE_CHANGELOG.md": [
+"5a0a78ab4d24606d8e1ff3ccf21ff9e34e964518"
+],
+"assets/README.md": [
+"c9432418809dc007cca9ab058cf26b841d1ff0da"
+],
+"assets/images/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"assets/images/two-repository-workflow.png": [
+"03e3ea591779266333ff87e926dd1357a44ace82"
+],
+"assets/prototype-exports/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"design/00-design-spine.md": [
+"156753a9dfd91a1fc9e92e0b961ad59fcfebb7d4"
+],
+"design/10-design-strategy.md": [
+"9cb166cfdbecae86699769447385f81583777694",
+"de92343ffa85e4610fe6590a288b98f923a9f41b"
+],
+"design/11-conceptual-architecture-v0.1.docx": [
+"518796b23e7aa0a1c8849e35f5d743af972a75bc"
+],
+"design/11-conceptual-architecture.md": [
+"dfc57ef29ac06d21a063304970e0e147ceab2876",
+"9ea24eec2f1ea742158192c4976fc2d53b8b4d15"
+],
+"design/12-ux-ui-prototype.md": [
+"46fd7a4cbb4078dcf0a5f446724a14cd43d7302b"
+],
+"design/13-detailed-design.md": [
+"3a70109efdc9b8864582591ea90311a842660b78"
+],
+"design/14-design-review.md": [
+"4ebbf3e11baa5651399bd988eb4accee56a42510"
+],
+"design/README.md": [
+"970b0bfaab5974198156d3da00ef1d20180e6a43",
+"8dfb6b6a9bc6f3a1a6ce2c1d7ca739e68470ec71"
+],
+"diagrams/README.md": [
+"1b63579f10b3d02eacbd35d20946b18de274a419"
+],
+"diagrams/activity/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/activity/README.md": [
+"94ba23f95b85ecc5d838f1c9f768bea33b721eda"
+],
+"diagrams/architecture/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/architecture/README.md": [
+"b00c3891a2d5aaa30b1e9b7b650e319d3e350ad1",
+"ca7607a55394ba39269a6f6cf127afcad08aba9e"
+],
+"diagrams/context/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/context/README.md": [
+"615a947c88593cb9d0857da670cecf58e40e1078",
+"9bbdf53f2b1bd8bb12736664f29dd9ae0b58c160"
+],
+"diagrams/domain-model/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/domain-model/README.md": [
+"a28e01c1cdee40bed0aa1c71c4633ff61f7800e3"
+],
+"diagrams/erd/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/erd/README.md": [
+"977e14ac4d9e979373b4a1f3b6be674459f67ad3"
+],
+"diagrams/sequence/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/sequence/README.md": [
+"cc6084d530d0017f8c235b2750ea60f4795455a9"
+],
+"diagrams/stakeholders/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/stakeholders/README.md": [
+"25d2bc6f458c0b7767eb77316947634229a5fe33"
+],
+"diagrams/ui-flow/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/ui-flow/README.md": [
+"d13eca574dd200bbf06b461d6c67c03790198ca2"
+],
+"diagrams/use-case/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"diagrams/use-case/README.md": [
+"0eae758729719babefd5ed2d19c6b489f82653e0"
+],
+"docs/00-project-profile.md": [
+"c36558e0d3686260d1099b91308b5315cff4aa51"
+],
+"docs/01-problem-brief-v0.1.md": [
+"095fc8fdd7786afab1f0cd2810e6ff37de9910be"
+],
+"docs/02-stakeholder-context-scope.md": [
+"2c1649792958f1702c5160770b9ccbf8769ac1ec"
+],
+"docs/03-elicitation-plan.md": [
+"1e5e012457e5688cadc46f49309d6b134a873a35",
+"8280dcc2e20ea5618089bcef662390a4cdd175a6"
+],
+"docs/03-interview-guide.md": [
+"45ef9e48d865b76207693782360024d41fbdfc98",
+"f2fa0d2aa18529ffe5b4a2008377edfe1ba56f95"
+],
+"docs/04-evidence-log.md": [
+"0957466a6406a7744e3d1f34ff831baac0fda4fe",
+"8348032adcc5f4508285e373d80bfff10983a752"
+],
+"docs/04-requirement-candidates.md": [
+"5e34e7c26ee820a8e7b81798b3755a3b99c06588"
+],
+"docs/05-requirement-backlog.md": [
+"51da7c6673ff00174ef9ccb197d9c5ae66f69e6f"
+],
+"docs/06-requirement-models.md": [
+"7a52ab2e65db40f571de30385f108ed6502c6cd0"
+],
+"docs/07-srs-v1.md": [
+"588933299c4db57267689363f8bc7defd23a7bba"
+],
+"docs/08-validation-traceability.md": [
+"6bbbe8a9ae3064208369dbeb2fe47aebfa42a017",
+"82daf8a7e9719c4540d838299f2da02f794add22"
+],
+"docs/README.md": [
+"5677905aa8798782c8c5fba4e5e043b6c80b820d",
+"b744dd99b63a1d2b855b5c2137d1e92594eac719"
+],
+"docs/glossary.md": [
+"c1886287206e85848466e7d88e01e6285240703c"
+],
+"docs/requirements-change-log.md": [
+"e3577ef0dc6539a0e15b0ab6535fbbadf0e88390"
+],
+"evidence/README.md": [
+"6c89fb646a4d1f291e4b5795f49d4af4cf8c1b88"
+],
+"evidence/week-01/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-01/README.md": [
+"fc049573afd32baba01687630eb798d8681c49d5"
+],
+"evidence/week-02/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-02/README.md": [
+"19edc13b2f9a576e61efc6f9ae9a1bf2960869d8"
+],
+"evidence/week-03/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-03/README.md": [
+"34bbe41314a01ba7b552de3f125cf350715a0b32",
+"9e01c150ae2f6445c06f75b215ad88ec1bf472c2",
+"ba0a85cc5846bb49a57d8ad600909c145bdee9a0"
+],
+"evidence/week-03/ai-interview-rehearsal-notes.md": [
+"fe23d7725a84fe2bb48f9115b3385d896be22ba6"
+],
+"evidence/week-03/question-rehearsal-notes.md": [
+"c01ac015b2d8af2e52be80cd0739de0f21986ec0"
+],
+"evidence/week-04/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-04/README.md": [
+"76abbfa9fe30ff8b6ced6a68e47c13f8eb0426b4",
+"f45dcc6ab4b4944d9436cee8dfec870ac02a16b5",
+"d9d4a0128c59fc2b5b21db78d3e75bbd9f2b7815"
+],
+"evidence/week-04/ai-conversation-excerpt.md": [
+"f3364df200799c34f7420f0887606fe7d4071476"
+],
+"evidence/week-04/ai-stakeholder-simulation-log.md": [
+"84d789900dbcd2c55a9a9001c113dc09dd1589ea"
+],
+"evidence/week-04/workshop-minutes.md": [
+"6700fa7689e112bd7b1b499b845d04ecd7d4f9ee"
+],
+"evidence/week-05/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-05/README.md": [
+"10c1ecc982f366fced64366b505ec2591bdf89c0"
+],
+"evidence/week-05/baseline-review/README.md": [
+"76519fedc7af2e8e1a83b29d396aff5117180e60"
+],
+"evidence/week-05/baseline-review/health-check.md": [
+"d1482e10ded1abad9069b6889e554cbad326c550"
+],
+"evidence/week-05/baseline-review/open-questions.md": [
+"07317166ce7a7a1326dc37c08a18ccf725fe2152"
+],
+"evidence/week-05/baseline-review/peer-cross-review.md": [
+"e7aae7bb2b6ce6fb2a903735b3cf285263d415d6"
+],
+"evidence/week-06/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-06/README.md": [
+"31b40e87078e190220b2cdf771e152b2b5794446"
+],
+"evidence/week-07/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-07/README.md": [
+"4f27db067bdc6186b1f21cd62a1fa9f75e8ae4ed"
+],
+"evidence/week-08/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-08/README.md": [
+"bacd3736caad9122bc54db42fc04f2795ce2aec7"
+],
+"evidence/week-10/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-10/README.md": [
+"083995aa9e484a7f994742b2ee36aad4050e1857",
+"38722c8f59293de236b403708ad7142a0eb41ea8"
+],
+"evidence/week-11/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-11/README.md": [
+"4f9b6798d83cfbfb095d5ffd0665c8d9f7b35ad8",
+"0950d58f1c39be722d6a79a66507544d26a9099a"
+],
+"evidence/week-12/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-12/README.md": [
+"e0ba8ff74397b9958d5e7d632ffeba2461d0f790"
+],
+"evidence/week-13/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-13/README.md": [
+"cf5e8366c4c8b65d4a78156a48b2e35eee66c577"
+],
+"evidence/week-14/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-14/README.md": [
+"08332d991a8f5570b6696755b24106c917c2dd16"
+],
+"evidence/week-15/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-15/README.md": [
+"370bbfed8d6cb35a3046836f8b2cff897f3920ff"
+],
+"evidence/week-16/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"evidence/week-16/README.md": [
+"a9fc8330209f31784fb58e56e8775a0a4f0889f6"
+],
+"feedback/15-individual-reflection.md": [
+"9f4494041c35625f417a3a3e9cfe45b30f6e8fb3"
+],
+"feedback/README.md": [
+"e65f6a6ebd0cfae4fafe4116f44d130f359dd05d"
+],
+"feedback/peer-feedback.md": [
+"6db2f453f59b93e0e6ae39247274a1bd1683a6dc"
+],
+"feedback/week-02-peer-feedback.md": [
+"007202a9ed98745ea169de870f3543308213421f"
+],
+"feedback/week-03-peer-feedback.md": [
+"47f7d6cace3e426aaf9118d3e22dbb8d7057b540"
+],
+"final-exam/README.md": [
+"b418302e31ca71cc0b2aaa435305264f2d51d1ba"
+],
+"final-exam/ai-use-log.md": [
+"e57a7237ebd9b5da86a0abc093a935c8ffe18591"
+],
+"final-exam/diagrams/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"final-exam/final-exam-submission.md": [
+"97961ee2236b81c16e4233cac2eb712b65679c18"
+],
+"final/README.md": [
+"b2cad460fedc71e7ac1f32bafdc2adc9b474e40f"
+],
+"final/final-project-summary.md": [
+"d38af6d119d3bc2ce155883b3e0bcc451fc82d65"
+],
+"final/midterm-snapshot/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"final/midterm-snapshot/README.md": [
+"9d7d07a4e9f566aef2487e7e98f75149836d78de"
+],
+"midterm/README.md": [
+"706f0627d29bbec1468e204ceab58071d2274f36"
+],
+"midterm/ai-transcript.md": [
+"6cef581e2c97513611f682f5a873bfc8b6170043"
+],
+"midterm/ai-use-log.md": [
+"c4f6770dbe90a0b8f359e9cc3d91632318ce4a42"
+],
+"midterm/twist.md": [
+"78f7f52560cfa22ff0f5b9cd46b6c1370415fbc1"
+],
+"midterm/worklog.md": [
+"9d8de1a0c572f7b3271d9a7d8a2af95280c569a6"
+],
+"project-management/README.md": [
+"733a66438bc9cde6a4d70ee6647f559b877fcb15",
+"ed9036e0019cbc78f9ca3701ac40cfc50e6cf4fe"
+],
+"project-management/ai-use-log.md": [
+"b2bd6e8829a97effa6b6d1f3b539ad5d43c130da"
+],
+"project-management/backlog.md": [
+"18473b4f9e43b7bbedd01883f6bf8da50fd53040"
+],
+"project-management/course-sync-log.md": [
+"1bd5b2621718819bd9dc7597c00bea9a45383426"
+],
+"project-management/decision-log.md": [
+"3883bf4ac04d1a99586b142335dc30493b323a81"
+],
+"project-management/meeting-minutes/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"project-management/meeting-minutes/README.md": [
+"cbbed0dbf7618937d37314bc3633291416f1c17c"
+],
+"project-management/risk-and-issue-log.md": [
+"a6aede416179fc14ee56b66f7b3c696a68b84c2a"
+],
+"project-management/team-worklog.md": [
+"8abafa55978fdd14148bb4cc1707c9c260294f89"
+],
+"project-management/week-02-week-03-worklog.md": [
+"734af57eabb54d691cd499f5dede5f5b83901310"
+],
+"project-management/weekly-status.md": [
+"5d6c49413386a7ca8a31021f245b17e03cdab09c"
+],
+"scripts/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"scripts/check-project-structure.py": [
+"05dfd6fefe090417505ae1599c2b131fadc94365",
+"d3f7421f9f685b6fa29ed831eeb8f031c27305d5",
+"d05831edf7f93df849d3a8cb5bb1ec92eb096cae"
+],
+"submissions/.gitkeep": [
+"e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+],
+"submissions/README.md": [
+"25418317563f930de1a4ea8bc24d49b077fe301a",
+"50ae7b2f88be235686f2253c7ace6b1794b37b65",
+"e53c1291f1667651394b7210727c11a0e9a7127b"
+],
+"submissions/baseline-review-submission.md": [
+"86186bef80dc9c9c113730f9cdf19c06f07e1d98"
+],
+"submissions/submission-register.md": [
+"1d8d1d5d4c03446cf09492191da3e648fc3a44b1",
+"bae24849a2993c11d4357668540d041a17011550",
+"51f60014b52ef122f21eb477fefd2fb38389b9f8"
+],
+"submissions/week-01-submission.md": [
+"45727ed7cb390a4b195d6952efe11c262a2ebcaa",
+"b6a22cdee3eeba40a16a26dea137321dea74a3e8"
+],
+"submissions/week-02-submission.md": [
+"25d18fa9e10045fb0f418596b01463f71e717326",
+"de9031bb5f4f0eec6f2e81868bff51289ee286cd",
+"5ab98fb7eaaa9fd3937075f418599e637ec1b973"
+],
+"submissions/week-03-submission.md": [
+"5b1a82fab5af758d8078fce6493df65f2cb4db8f",
+"f9952d4b8f4f5b34a5d25d7a6823a1879913b552"
+],
+"submissions/week-04-submission.md": [
+"b8f7c3473881b4707daf36a9daf4091771f11d68",
+"9028012aa21577eb8919cf221f7f50c918a0f7ae"
+],
+"submissions/week-05-submission.md": [
+"27216577a74c9ec76b43fb11c20ef65d83fa4bc1",
+"d97accfe80b36fb94f381557b1ce19b195304da8",
+"1e5486c04a11d0b2742c20b54446c156d267e849"
+],
+"submissions/week-06-submission.md": [
+"849dae77e2278ed78b5384d43b4d8f5a4b66253a",
+"3f91ee4b5ae4b080917789bd488b9563792e9e36"
+],
+"submissions/week-07-submission.md": [
+"5d0ab1c155348f17cabb40fd307fcd57a77716cf",
+"c2eb73c64b58f20205234f59b5f702121d86b6e1"
+],
+"submissions/week-08-submission.md": [
+"85fb1c4ad5dbe64d84ca0e398de8d3ce548a408c",
+"e5028d296282059c968c157804bf7a6014c7f729"
+],
+"submissions/week-10-submission.md": [
+"be7458ff4fddbfaec17c361dc1caf70806769461",
+"5d2fb3cffb98234cb77db04acf85b2d406015843"
+],
+"submissions/week-11-submission.md": [
+"7e1cf381b4afa75b052f5256ba30887ec3d2d9ea",
+"ba238028bdcff9c7480491637f1776c63075be62"
+],
+"submissions/week-12-submission.md": [
+"e1b71eecc30eb2e4dbcde72f62571e33f7f613a2",
+"f5092d71c63db6398fe6317a031e36f3e7953fd7"
+],
+"submissions/week-13-submission.md": [
+"898b037877f46766206616eefb9e5da6536373ae",
+"808943620b45a419d3544fd191897a87ae473b3f"
+],
+"submissions/week-14-submission.md": [
+"6e2b460b53ae29e05d755c19a6f0807f0e7c8933",
+"8d4f03f044bf733ed854b961a70923c82bc49211"
+],
+"submissions/week-15-submission.md": [
+"8690eb588f8b895ff9f7fa2c2821c7f738a76b6d",
+"4bc0fb72e69596e55557e14d456e288461b9ddc4"
+],
+"submissions/week-16-submission.md": [
+"57bb4111d3bb49391aaafc554fbf17f854f23a84",
+"071d316eca8c4cf5e7ebb40c47552c3386ee38be"
+],
+"weekly/README.md": [
+"1f034ae872e6322f9cbece2ec6f52dfec118fdf7",
+"65f805a1af6adcc39a7b7e7552139737c4a7632c"
+],
+"weekly/week-01-problem-brief.md": [
+"66582b95047e4ff2b28dac2bff1ccfdbda832a13",
+"90b23c693c3e775427ff1bd3f5ea308019f66653",
+"d2b882f81268b074ebba2f38fd513e11b25770e6"
+],
+"weekly/week-02-stakeholder-context-scope.md": [
+"8caed41d38e6f718d611dcf8dbc1ba61c8c70837",
+"a2c03521cc15e938c261b0e9a36a631bd1ba38a3",
+"e08c4a6f71cb5770b42266422643565c669878e2"
+],
+"weekly/week-03-elicitation-interview-design.md": [
+"8a65e4b916fab0c0bdd71e9891b93d2de0420f1a",
+"fc7e16ae723348718e8be4df59ec2dc0679c3ee7",
+"bc07312260b82a28a17b4d449ed83d2fa4c29b86"
+],
+"weekly/week-04-simulation-evidence-negotiation.md": [
+"18b207bdb9ddddc646f7936c0f35b782607becb5",
+"fc956bcb07109676b20a39934d19afee1c7bd102",
+"23d86c626bb107f950df3290baa8e06a0172f2be"
+],
+"weekly/week-05-requirement-analysis-prioritization.md": [
+"08f6b73b9e956099d90b08b5cf18616e9e5f0058",
+"caa4420afab8c9437618dc348a42f8cca0bcf54b",
+"ba22f3921fecea0483fa9054501f8ab04933289c"
+],
+"weekly/week-06-requirement-models-negotiation.md": [
+"38fa9d4da29dcc7ba63c6b05c89e85d000f96ceb",
+"e036f84358ba76d324349a0db14d02f137641c38",
+"21ee854a626ba2f82c5beb9a0f8837b12aca2bad"
+],
+"weekly/week-07-srs-authoring.md": [
+"40eb28fee7213d33330f6b9bd4ccf55bab9f370e",
+"c438cd6cd2edae4e7b6231fe7568310170d6cf50",
+"6d1e88bef7e12957421a23af3351b8bfc7bf4d00"
+],
+"weekly/week-08-validation-traceability.md": [
+"0ee6f97a418f78a6a2f8588cad1f565174340d72",
+"133f2536cc074625c6414125ac83f21b93057aa9",
+"a534838097be34ed6dba3dbe7023127991c7c3bb"
+],
+"weekly/week-09-midterm.md": [
+"5f458578f81a0cccb89b07c44f99909eded26f67"
+],
+"weekly/week-10-design-strategy.md": [
+"8309b5bf4e0bec7376ee4b5fc19d0b39a8802e75",
+"d11dfc54ba5d3c8107084e200c94cb2ff63cb319",
+"7a3f6f5fbe1077ea62dc13befcca41489e0b9585"
+],
+"weekly/week-11-conceptual-architecture.md": [
+"31228e78821dfe00aa49cb0c4e3d2d6f6cc91f1e",
+"93b8c6c4fc4cfa85d38e2c1cd6f9df47596259ae",
+"f0c38193f4f212bf8f40c942c9968ed8e7f47a01"
+],
+"weekly/week-12-ux-ui-prototype.md": [
+"b855b9e6a0c581b8918029ee8e067bc7fb56c30e",
+"cf91f998b5e6da13f107fa4bb5d2cb58ee8f7c0e",
+"7ccfe2f9653c010944c07ddc1824591ff6f8445e"
+],
+"weekly/week-13-detailed-design.md": [
+"578d06b215d542c0c93d39dd59a760777f9e0e75",
+"9cfc77e56c05fadd39845f5b5866012018dd0593",
+"62ada7d647926098946643e98757feb12949d0a5"
+],
+"weekly/week-14-design-review.md": [
+"ba2cfd82b1d431f7c8e71559ce65bab0766e2f93",
+"cf974a3d8410fad3ece125ffddf252b8864aa450",
+"7fdc0bbe6b0e540e773b3a441c030658ba96ae95"
+],
+"weekly/week-15-usability-iteration.md": [
+"a9add574aae095d47378175bd0f78d176f583dc4",
+"c2a22deabbe9e0ec95cd22539ad6753187bcdebe",
+"38ff1311b86b5816793b1d3a626c258971dcee2a"
+],
+"weekly/week-16-showcase-finalization.md": [
+"18184d5b4fe922a5c3b5e40caf608385f9604427",
+"7c8750c388b351eee97df87ec90c6a6d3114c989",
+"a8f1fe9a48dd9c32bf6ec1b7aa557b31bd740f79"
+],
+"weekly/week-17-final-exam.md": [
+"aada0930269f4d33276533af3b61a588d18e7c0e"
+]
+}

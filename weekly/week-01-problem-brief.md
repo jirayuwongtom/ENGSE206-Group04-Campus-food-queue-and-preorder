@@ -1,4 +1,10 @@
 # Week 01 — Problem Brief Kick-off
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-01-problem-brief/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-01-problem-brief/assignment-contract.md
+- ส่งงานที่: [`submissions/week-01-submission.md`](../submissions/week-01-submission.md)
+- Expected paths: `docs/01-problem-brief-v0.1.md`, `evidence/week-01/`, `submissions/week-01-submission.md`
 
 ## เป้าหมาย
 

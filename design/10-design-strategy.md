@@ -1,33 +1,61 @@
-# 10 — Design Strategy and Rationale
+# Design Strategy v0.1 — [ชื่อระบบของทีม]
 
-> **Week 10 deliverable**
+> **สถานะ:** Design Draft | **Assignment:** W10-v1.0 | **Case:** [Case ID / ชื่อ]
+> **ฐาน SRS ที่ใช้:** `docs/07-srs-v1.md` สถานะ [Draft / Needs Revision / Baseline Candidate] — *ไม่อ้างว่า Approved*
+> **Change request ที่รู้และยัง Pending:** [ID หรือ "ไม่มี"]
 
-## 1. Design Goals
+## 1. ระบบนี้ทำอะไร (ไม่เกิน 4 บรรทัด สำหรับ Dev)
 
-| Goal | Related Requirement | Design Implication |
-|---|---|---|
-| [เช่น ลดความผิดพลาดในการจอง] | FR-01, NFR-01 | [กรอก] |
+[ผู้ใช้หลักทำอะไร → ระบบทำอะไร → จบงานเมื่อไร]
 
-## 2. Design Principles
+## 2. ขอบเขตรุ่นแรก: Build now / Overview / Later / ไม่ทำในวิชานี้
 
-- [เช่น Simplicity, consistency, privacy by design, accessibility]
+> กติกา: จัดลำดับพัฒนา **ไม่ลบอะไรออกจาก SRS**; ทุกแถวต้องมี requirement ID
 
-## 3. Candidate Strategies / Alternatives
-
-| Decision Area | Option A | Option B | Selected Option | Rationale | Trade-off |
-|---|---|---|---|---|---|
-| [เช่น authentication] | [กรอก] | [กรอก] | [กรอก] | [กรอก] | [กรอก] |
-
-## 4. Quality Attribute Tactics
-
-| Quality Attribute | Tactic | Related NFR | Evidence in Design |
+| ระดับ | Use case / ความสามารถ | Requirement IDs | เหตุผลสั้น |
 |---|---|---|---|
-| [Usability] | [กรอก] | NFR-xx | [wireframe/flow] |
+| Build now | | | |
+| Build now | | | |
+| Overview | | | |
+| Later | | | |
+| ไม่ทำในวิชานี้ / รอคำตอบ | | | |
 
-## 5. Architecture / UX Constraints
+## 3. สามเรื่องที่ถ้าออกแบบพลาด ระบบนี้พัง (Design Drivers)
 
-[กรอก]
+| ID | เรื่องห้ามพลาด (ภาษาง่าย 1 บรรทัด) | มาจาก (BR/NFR/FR/AC) | ผลต่อการออกแบบใน W11 / W12 / W13 |
+|---|---|---|---|
+| D1 | | | |
+| D2 | | | |
+| D3 | | | |
 
-## 6. Design Decisions to Record
+## 4. Design Spine
 
-อ้างอิง `project-management/decision-log.md`
+ดู `design/00-design-spine.md` (สัปดาห์นี้เติมเฉพาะคอลัมน์ W10)
+
+## 5. ข้อตกลงที่ W11 ต้องรักษา (ยังไม่เลือก architecture/เทคโนโลยี)
+
+1. [เช่น กติกาตรวจสอบอยู่ที่เดียว]
+2. [เช่น state เป็นข้อมูลที่บันทึกได้ ไม่ใช่สีของปุ่ม]
+3. [เช่น ข้อมูลผู้ใช้มาจากระบบข้างนอก]
+
+## 6. Open Decisions ของรุ่นแรก (ไม่เกิน 5)
+
+> ห้ามแต่งตัวเลข policy หรือเทคโนโลยีเพื่อให้ตารางดูครบ
+
+| ID | คำถามที่ยังไม่มีคำตอบ | เชื่อม OI/ID ใน SRS | เจ้าของคำตอบ | ผลถ้ายังไม่ตอบ | รุ่นแรกทำอย่างไรระหว่างรอ |
+|---|---|---|---|---|---|
+| DD-01 | | | | | |
+| DD-02 | | | | | |
+
+## 7. Done checklist (ติ๊กก่อนส่ง)
+
+- [ ] scope table แบ่ง 4 ระดับ โดยไม่ลบ FR ใดออกจาก SRS
+- [ ] ทุกแถวใน scope table มี requirement ID
+- [ ] drivers 3 ข้อ อ้าง ID และบอกผลต่อการออกแบบ
+- [ ] Spine 5–8 แถว มี actor + UC ทุกแถว เรียงตามผู้ใช้ทำจริง
+- [ ] open decisions ≤ 5 มีเจ้าของ + ผลกระทบ + ระหว่างรอทำอย่างไร ไม่มีค่าที่แต่งขึ้น
+- [ ] ระบุสถานะ SRS ตามจริง ไม่อ้าง Approved
+
+## 8. AI use และการตรวจโดยมนุษย์
+
+[ใช้ AI ช่วยอะไร ใครตรวจ ดู `project-management/ai-use-log.md`]

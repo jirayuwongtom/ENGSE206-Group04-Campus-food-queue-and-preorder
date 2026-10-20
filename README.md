@@ -9,6 +9,18 @@
 
 ---
 
+## สำคัญ: Repository นี้ไม่ได้เก็บโจทย์ของวิชา
+
+> **อ่านโจทย์จาก Course Repo แล้วทำ/ส่งใน Repository กลุ่มนี้**
+
+- Course/Lab Repo: [https://github.com/se-rmutl/engse206-lab](https://github.com/se-rmutl/engse206-lab)
+- Team Repo Template: [https://github.com/se-rmutl/engse206-project-template](https://github.com/se-rmutl/engse206-project-template)
+- กรอกการเชื่อมต่อที่ [COURSE_REPOSITORY.md](COURSE_REPOSITORY.md)
+- เปิด [คู่มือการส่งงาน 15 สัปดาห์](STUDENT_SUBMISSION_GUIDE.md)
+- อาจารย์เริ่มตรวจจาก [Submission Register](submissions/submission-register.md)
+
+ห้ามคัดลอก Course Repo ทั้งชุดเข้ามาใน repo นี้ และห้ามส่งงานโดยแก้ Course Repo
+
 ## จุดประสงค์ของ Repository นี้
 
 Repository นี้ช่วยให้กลุ่มทำงานอย่างเป็นระบบ เก็บประวัติการปรับปรุงด้วย Git และเชื่อมโยงชิ้นงานทุกชิ้นตาม flow ของรายวิชา ENGSE206 Course Repository
@@ -49,7 +61,11 @@ ENGSE206-GroupXX-ProjectName/
 ├── evidence/                         # หลักฐาน Workshop, interview, review, test
 ├── weekly/                           # Checklist รายสัปดาห์และทางลัดไปชิ้นงาน
 ├── feedback/                         # Reflection และ peer feedback
-├── final/                            # ไฟล์ส่งปลายภาค / presentation / exports
+├── submissions/                      # ใบส่งงานรายสัปดาห์ + submission-register.md (หน้าที่อาจารย์ตรวจ)
+├── midterm/                          # สอบกลางภาค งานกลุ่ม (ทำบน branch ตามประกาศ)
+├── final-exam/                       # สอบปลายภาค ส่วน ก (ทำบน branch final-exam)
+├── final/                            # midterm-snapshot (W08) และงานปลายเทอม
+├── scripts/                          # check-project-structure.py — ตรวจตัวเองก่อนส่ง
 └── assets/                           # รูปภาพ ไอคอน wireframe exports ที่อ้างอิงในเอกสาร
 ```
 
@@ -62,13 +78,15 @@ ENGSE206-GroupXX-ProjectName/
 
 | ช่วง | งานหลัก | ไฟล์/โฟลเดอร์ที่ต้องเติม |
 |---|---|---|
-| Week 1–2 | เข้าใจปัญหา กำหนด stakeholder และ scope | `docs/01-*`, `docs/02-*`, `project-management/team-worklog.md` |
-| Week 3–4 | วางแผนเก็บข้อมูล ทำ interview/simulation และเก็บหลักฐาน | `docs/03-*`, `docs/04-*`, `evidence/week-03/`, `evidence/week-04/` |
-| Week 5–8 | วิเคราะห์ จัดลำดับ ทำ model เขียน SRS ตรวจสอบ/traceability | `docs/05-*` ถึง `docs/08-*`, `diagrams/` |
-| Week 10–15 | ออกแบบ strategy, architecture, UX/UI, detailed design และ review | `design/10-*` ถึง `design/14-*`, `evidence/week-15/` |
-| Week 16 | สรุป ปรับปรุง นำเสนอและ reflection | `final/`, `feedback/15-individual-reflection.md` |
+| Week 1–2 | เข้าใจปัญหา stakeholder และ scope | `docs/01-*` · `docs/02-*` · `diagrams/context/` |
+| Week 3–4 | วางแผนเก็บข้อมูล ซ้อมสัมภาษณ์กับ AI เก็บหลักฐาน | `docs/03-*` · `docs/04-*` · `evidence/week-03/` · `evidence/week-04/` |
+| Week 5 + 5b | backlog และ Baseline Review | `docs/05-*` · `docs/08-*` ส่วน A · `evidence/week-05/baseline-review/` · tag `baseline-v1.0` |
+| Week 6–8 | model · SRS · review และ traceability | `docs/06-*` ถึง `docs/08-*` ส่วน B · `diagrams/use-case/` · `diagrams/activity/` |
+| Week 9 | สอบกลางภาค งานกลุ่ม | `midterm/` |
+| Week 10–11 | Design Strategy และ Conceptual Architecture (C4 ระดับ 1–2) | `design/00-design-spine.md` · `design/10-*` · `design/11-conceptual-architecture-v0.1.docx` · `diagrams/architecture/` |
+| Week 15 | สอบปลายภาค ส่วน ก | `final-exam/` |
 
-ดูรายละเอียดรายสัปดาห์ที่ [weekly/README.md](weekly/README.md)
+path ละเอียดและข้อความ commit ของทุกสัปดาห์อยู่ที่ [COURSE_ALIGNMENT.md](COURSE_ALIGNMENT.md) · checklist รายสัปดาห์ที่ [weekly/README.md](weekly/README.md)
 
 ---
 
@@ -106,7 +124,9 @@ ENGSE206-GroupXX-ProjectName/
 - [SRS v1](docs/07-srs-v1.md)
 - [Traceability และ Change Management](docs/08-validation-traceability.md)
 - [Design Strategy](design/10-design-strategy.md)
-- [Conceptual Architecture](design/11-conceptual-architecture.md)
+- [Design Spine](design/00-design-spine.md)
+- [Conceptual Architecture (Word)](design/11-conceptual-architecture-v0.1.docx)
+- [Submission Register](submissions/submission-register.md)
 - [UX/UI Prototype](design/12-ux-ui-prototype.md)
 - [Detailed Design](design/13-detailed-design.md)
 - [Final Submission Guide](final/README.md)

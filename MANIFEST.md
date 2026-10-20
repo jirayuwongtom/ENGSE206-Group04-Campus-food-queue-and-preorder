@@ -1,6 +1,6 @@
-# Repository Manifest
+# Repository Manifest — Updated Two-Repository Model
 
-This file lists the starter files created for the ENGSE206 group semester project.
+> Template v2.0 (2026-10-20) — ดู TEMPLATE_CHANGELOG.md
 
 - `.gitattributes`
 - `.github/ISSUE_TEMPLATE/requirement-change.md`
@@ -10,14 +10,21 @@ This file lists the starter files created for the ENGSE206 group semester projec
 - `CHANGELOG.md`
 - `CONTRIBUTING.md`
 - `COURSE_ALIGNMENT.md`
+- `COURSE_REPOSITORY.md`
 - `GITHUB_SETUP.md`
+- `MANIFEST.md`
 - `PROJECT_STATUS.md`
 - `README.md`
+- `STUDENT_SUBMISSION_GUIDE.md`
 - `TEAM.md`
+- `TEMPLATE_CHANGELOG.md`
 - `assets/README.md`
 - `assets/images/.gitkeep`
+- `assets/images/two-repository-workflow.png`
 - `assets/prototype-exports/.gitkeep`
+- `design/00-design-spine.md`
 - `design/10-design-strategy.md`
+- `design/11-conceptual-architecture-v0.1.docx`
 - `design/11-conceptual-architecture.md`
 - `design/12-ux-ui-prototype.md`
 - `design/13-detailed-design.md`
@@ -36,6 +43,8 @@ This file lists the starter files created for the ENGSE206 group semester projec
 - `diagrams/erd/README.md`
 - `diagrams/sequence/.gitkeep`
 - `diagrams/sequence/README.md`
+- `diagrams/stakeholders/.gitkeep`
+- `diagrams/stakeholders/README.md`
 - `diagrams/ui-flow/.gitkeep`
 - `diagrams/ui-flow/README.md`
 - `diagrams/use-case/.gitkeep`
@@ -44,7 +53,9 @@ This file lists the starter files created for the ENGSE206 group semester projec
 - `docs/01-problem-brief-v0.1.md`
 - `docs/02-stakeholder-context-scope.md`
 - `docs/03-elicitation-plan.md`
+- `docs/03-interview-guide.md`
 - `docs/04-evidence-log.md`
+- `docs/04-requirement-candidates.md`
 - `docs/05-requirement-backlog.md`
 - `docs/06-requirement-models.md`
 - `docs/07-srs-v1.md`
@@ -59,10 +70,19 @@ This file lists the starter files created for the ENGSE206 group semester projec
 - `evidence/week-02/README.md`
 - `evidence/week-03/.gitkeep`
 - `evidence/week-03/README.md`
+- `evidence/week-03/ai-interview-rehearsal-notes.md`
+- `evidence/week-03/question-rehearsal-notes.md`
 - `evidence/week-04/.gitkeep`
 - `evidence/week-04/README.md`
+- `evidence/week-04/ai-conversation-excerpt.md`
+- `evidence/week-04/ai-stakeholder-simulation-log.md`
+- `evidence/week-04/workshop-minutes.md`
 - `evidence/week-05/.gitkeep`
 - `evidence/week-05/README.md`
+- `evidence/week-05/baseline-review/README.md`
+- `evidence/week-05/baseline-review/health-check.md`
+- `evidence/week-05/baseline-review/open-questions.md`
+- `evidence/week-05/baseline-review/peer-cross-review.md`
 - `evidence/week-06/.gitkeep`
 - `evidence/week-06/README.md`
 - `evidence/week-07/.gitkeep`
@@ -86,21 +106,54 @@ This file lists the starter files created for the ENGSE206 group semester projec
 - `feedback/15-individual-reflection.md`
 - `feedback/README.md`
 - `feedback/peer-feedback.md`
+- `feedback/week-02-peer-feedback.md`
+- `feedback/week-03-peer-feedback.md`
+- `final-exam/README.md`
+- `final-exam/ai-use-log.md`
+- `final-exam/diagrams/.gitkeep`
+- `final-exam/final-exam-submission.md`
 - `final/README.md`
 - `final/final-project-summary.md`
 - `final/midterm-snapshot/.gitkeep`
+- `final/midterm-snapshot/README.md`
+- `midterm/README.md`
+- `midterm/ai-transcript.md`
+- `midterm/ai-use-log.md`
+- `midterm/twist.md`
+- `midterm/worklog.md`
 - `project-management/README.md`
 - `project-management/ai-use-log.md`
 - `project-management/backlog.md`
+- `project-management/course-sync-log.md`
 - `project-management/decision-log.md`
 - `project-management/meeting-minutes/.gitkeep`
 - `project-management/meeting-minutes/README.md`
 - `project-management/risk-and-issue-log.md`
 - `project-management/team-worklog.md`
+- `project-management/week-02-week-03-worklog.md`
+- `project-management/weekly-status.md`
 - `scripts/.gitkeep`
 - `scripts/check-project-structure.py`
+- `scripts/template-blobs.json`
 - `submissions/.gitkeep`
 - `submissions/README.md`
+- `submissions/baseline-review-submission.md`
+- `submissions/submission-register.md`
+- `submissions/week-01-submission.md`
+- `submissions/week-02-submission.md`
+- `submissions/week-03-submission.md`
+- `submissions/week-04-submission.md`
+- `submissions/week-05-submission.md`
+- `submissions/week-06-submission.md`
+- `submissions/week-07-submission.md`
+- `submissions/week-08-submission.md`
+- `submissions/week-10-submission.md`
+- `submissions/week-11-submission.md`
+- `submissions/week-12-submission.md`
+- `submissions/week-13-submission.md`
+- `submissions/week-14-submission.md`
+- `submissions/week-15-submission.md`
+- `submissions/week-16-submission.md`
 - `weekly/README.md`
 - `weekly/week-01-problem-brief.md`
 - `weekly/week-02-stakeholder-context-scope.md`

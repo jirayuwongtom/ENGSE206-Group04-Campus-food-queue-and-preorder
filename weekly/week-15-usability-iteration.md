@@ -1,4 +1,10 @@
 # Week 15 — Usability Test and Iteration
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-15-usability-test-iteration/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-15-usability-test-iteration/assignment-contract.md
+- ส่งงานที่: [`submissions/week-15-submission.md`](../submissions/week-15-submission.md)
+- Expected paths: `evidence/week-15/`, updated `docs/` and `design/`, `submissions/week-15-submission.md`
 
 ## เป้าหมาย
 

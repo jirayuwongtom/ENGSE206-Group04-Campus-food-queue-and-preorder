@@ -1,4 +1,10 @@
 # Week 05 — Requirement Analysis and Prioritization
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-05-requirement-analysis-prioritization/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-05-requirement-analysis-prioritization/assignment-contract.md
+- ส่งงานที่: [`submissions/week-05-submission.md`](../submissions/week-05-submission.md)
+- Expected paths: `docs/05-requirement-backlog.md`, `evidence/week-05/`, `submissions/week-05-submission.md`
 
 ## เป้าหมาย
 

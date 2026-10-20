@@ -1,4 +1,10 @@
 # Week 02 — Stakeholder, Context and Scope
+## Course Assignment Source
+
+- อ่านคำสั่ง: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-02-stakeholder-context-scope/README.md
+- Assignment Contract: https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-02-stakeholder-context-scope/assignment-contract.md
+- ส่งงานที่: [`submissions/week-02-submission.md`](../submissions/week-02-submission.md)
+- Expected paths: `docs/02-stakeholder-context-scope.md`, `diagrams/context/`, `feedback/week-02-peer-feedback.md`, `submissions/week-02-submission.md`
 
 ## เป้าหมาย
 
