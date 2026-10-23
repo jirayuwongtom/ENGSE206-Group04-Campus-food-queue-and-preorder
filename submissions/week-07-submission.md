@@ -57,7 +57,7 @@ Expected paths: `docs/07-srs-v1.md`, `submissions/week-07-submission.md`
 | Field | Value |
 |---|---|
 | Commit message | `submit(w07): SRS draft v1` |
-| Commit hash | - |
+| Commit hash | 33f0ea5 |
 | Submitted at | 2026-09-01 23:30 |
 | Known limitations / open questions | บันทึกเป็น Deferred / TBD ใน Section 10 และ Appendix A จำนวน 4 รายการ: ISS-01 สูตรประเมินเวลารอคิวคลาดเคลื่อนไม่เกิน 5 นาที (FR-02), ISS-02 การทดสอบความเร็วแจ้งเตือนภายใน 3 วินาทีภายใต้โหลด 50 Users (FR-05, NFR-01), ISS-03 การสรุป Privacy Policy และเกณฑ์ Data Retention (NFR-02) และ ISS-04 รูปแบบการ Export รายงานสถิติเพิ่มเติมของผู้ดูแลพื้นที่ (FR-06) |
 

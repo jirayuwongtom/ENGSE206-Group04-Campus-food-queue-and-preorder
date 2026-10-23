@@ -37,7 +37,7 @@ Expected paths: `docs/01-problem-brief-v0.1.md`, `evidence/week-01/`, `submissio
 |---|---|---|
 | นายจิรายุ วงศ์ต่อม | Facilitator / Timekeeper อัปเดตข้อมูลกลุ่มและ Case Card, กำหนดขอบเขต In/Out of Scope ร่วมกับทีม | CASE_CARD.md, TEAM.md, project-management/team-worklog.md |
 | นายศักดิ์ณรงค์ นำนนท์ | Note taker ร่างเอกสาร Problem Brief v0.1 Evidence checker / Presenter  ตรวจสอบความสอดคล้องของหลักฐานกับ Case Card และจัดทำไฟล์ PDF ส่งมอบ | docs/01-problem-brief-v0.1.md , evidence/week-01/ENGSE206_Team04_W01_ProblemBrief_v0.1.pdf |
-| | | |
+
 
 ## 5. Tabletop / Review Summary
 
@@ -50,7 +50,7 @@ Expected paths: `docs/01-problem-brief-v0.1.md`, `evidence/week-01/`, `submissio
 | Field | Value |
 |---|---|
 | Commit message | `submit(w01): problem brief v0.1` |
-| Commit hash | [กรอกหลัง push] |
+| Commit hash | eaca4fc |
 | Submitted at | 2026-07-04 22:00 |
 | Known limitations / open questions | OQ-01 ลูกค้าควรยกเลิกออเดอร์ได้ถึงเมื่อไร, OQ-02 ใครเป็นผู้กดเปลี่ยนสถานะพร้อมรับหน้าเตา, OQ-03 ข้อมูลสำคัญที่ต้องแสดงบนหน้าจอร้านและหน้าจอลูกค้า |
 

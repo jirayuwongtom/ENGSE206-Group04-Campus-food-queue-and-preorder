@@ -50,7 +50,7 @@ Expected paths: `docs/06-requirement-models.md`, `diagrams/use-case/`, `diagrams
 | Field | Value |
 |---|---|
 | Commit message | `submit(w06): requirement models and acceptance criteria` |
-| Commit hash | - |
+| Commit hash | c510949 |
 | Submitted at | 2026-08-25 23:00 |
 | Known limitations / open questions | FR-02 (ประมาณเวลารอ) และ FR-05 (การแจ้งเมนูหมดและแนวทางชดเชย) ยังอยู่ในสถานะ Needs Follow-up จึงยังไม่สร้าง Use Case ในรอบนี้เพื่อไม่ให้เกินหลักฐานที่มี |
 

@@ -50,5 +50,5 @@
 | รายการ | ข้อมูล |
 |---|---|
 | Commit message | submit(w03): elicitation plan interview guide and rehearsal |
-| Commit hash / เวลา | กรอกหลังสร้าง commit ส่งงาน |
+| Commit hash / เวลา | 817533c |
 | ข้อจำกัด / คำถามที่ยังเปิดอยู่ | การซ้อมใช้ AI เป็นตัวแทน; peer feedback เป็นฉบับจำลอง; ยังไม่มี Worklog ของ Week 03; ต้องยืนยันหน้าที่เรียกคิว นโยบายยกเลิก และขั้นตอนเมื่อวัตถุดิบหมดกับผู้เกี่ยวข้องจริง |
