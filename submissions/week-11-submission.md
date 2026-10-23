@@ -6,9 +6,9 @@
 |---|---|
 | Assignment ID / Version | W11-v1.1 |
 | Assignment URL | https://github.com/jirayuwongtom/ENGSE206-Group04-Campus-food-queue-and-preorder/blob/main/design/11-conceptual-architecture.md |
-| Case ID / URL | Case 04 — ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย ([CASE_CARD.md](../CASE_CARD.md)) |
+| Case ID / URL | Case 04 — ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย |
 | Team | Group 04 |
-| Submission commit hash | 9766603883236161fa957cf5cd3704b8476cc6e7 |
+| Submission commit hash | fe2584b |
 
 ## Artefact links
 

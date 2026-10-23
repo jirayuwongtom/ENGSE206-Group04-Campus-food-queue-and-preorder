@@ -5,8 +5,8 @@
 | รายการ | ข้อมูล |
 |---|---|
 | Assignment ID | `W04` |
-| Course URL / version ที่อ่าน | [Course Repo: weeks](https://github.com/se-rmutl/engse206-lab/tree/main/weeks) · ตรวจ Assignment ID  [`weekly/week-04-simulation-evidence-negotiation.md`](../weekly/week-04-simulation-evidence-negotiation.md); ใน repo ไม่มี URL ตรงหรือ commit ของ contract ที่อ่าน |
-| Case / Role Pack | Case 04 — ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย ([Case Card](../CASE_CARD.md)); role pack และ prompt pack อ้างถึงใน contract แต่ไม่มีสำเนาใน repo |
+| Course URL / version ที่อ่าน | https://github.com/se-rmutl/engse206-lab/tree/main/weeks/week-04-stakeholder-simulation-negotiation |
+| Case / Role Pack | Case 04 — ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย  |
 | วันที่ตรวจเอกสาร | 2026-10-23 |
 | วันที่ทำ simulation ตามบันทึก | 2026-08-02 |
 
@@ -64,5 +64,5 @@
 | รายการ | ข้อมูล |
 |---|---|
 | Commit message สำหรับส่ง | `submit(w04): stakeholder evidence negotiation and candidates` |
-| Commit hash / เวลา | 9bb5e07ef9be29296ffe757d28688de6be346e1c |
+| Commit hash / เวลา | 57ce51f |
 | ข้อจำกัด / คำถามที่ยังเปิดอยู่ | Evidence ทั้งหมดมาจาก AI simulation; excerpt ไม่มี prompt/transcript ต้นฉบับ; ยังไม่มี worklog และ decision/risk รายการ Week 04; ต้องตรวจช่องว่างของบทบาทและแก้ RC-05/FR-05 กับ mapping ใน negotiation record |

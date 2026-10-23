@@ -50,7 +50,7 @@ Expected paths: `docs/02-stakeholder-context-scope.md`, `diagrams/context/`, `fe
 | Field | Value |
 |---|---|
 | Commit message | `submit(w02): stakeholder context and scope` |
-| Commit hash | aa08e08 |
+| Commit hash | 0cddb5c |
 | Submitted at | 2026-10-23 12:05 |
 | Known limitations / open questions | OQ-01–OQ-04 ยังเปิด (ส่งต่อ W03) · ยังไม่ได้ยืนยันกติกาการยกเลิกและจังหวะการอัปเดตคิวกับ stakeholder จริง · คำถามถึงผู้สอน: ใน W04 stakeholder simulation ควรให้ role card ของ "เจ้าของร้าน" และ "ลูกค้า" มีสถานการณ์ความขัดแย้ง (เช่น เมนูหมดกะทันหัน หรือลูกค้ามารับช้าจนคิวชะงัก) เจาะจงเพียงใด เพื่อให้ทีมใช้คำถามสัมภาษณ์ดึง requirement เรื่องการจัดการความคาดหวัง/ความผิดหวังได้ครบ |
  
