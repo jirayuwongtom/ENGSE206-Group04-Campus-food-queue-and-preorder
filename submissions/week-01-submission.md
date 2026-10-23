@@ -58,4 +58,4 @@ Expected paths: `docs/01-problem-brief-v0.1.md`, `evidence/week-01/`, `submissio
 
 | Date | Feedback | Change made | New commit |
 |---|---|---|---|
-| 2026-08-18 | ปรับแก้ถ้อยคำที่กำกวมใน Backlog ให้วัดผลและทดสอบได้จริง | แก้ไขถ้อยคำใน FR-04, FR-05, NFR-01, NFR-03 ตามบันทึก CR-05-01 และ DEC-05-01 | 95160a31 |
+| 2026-07-04 | ควรขยายคำอธิบาย Initial User Needs และเพิ่มสัดส่วน Out of Scope | เพิ่มตาราง Initial User Needs (UN-01 ถึง UN-04) และระบุรายการ Out of Scope 4 ข้อในหัวข้อที่ 7 | docs/01-problem-brief-v0.1.md |
