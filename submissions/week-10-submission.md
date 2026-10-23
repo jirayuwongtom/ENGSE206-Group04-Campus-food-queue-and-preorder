@@ -6,7 +6,7 @@
 | Assignment URL | https://github.com/se-rmutl/engse206-lab/blob/main/weeks/week-10-design-strategy/assignment-contract.md|
 | Case ID / URL | Case 04  ระบบจัดการคิวร้านอาหารหรือร้านเครื่องดื่มในมหาวิทยาลัย|
 | Team | Group 04|
-| Submission commit hash | ยังไม่ได้กรอก |
+| Submission commit hash | d138871 |
 
 ## Artefact links
 
