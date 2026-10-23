@@ -56,7 +56,8 @@ Expected paths: `docs/08-validation-traceability.md`, `docs/requirements-change-
 | Field | Value |
 |---|---|
 | Commit message | `submit(w08): SRS validation and traceability` |
-| Commit hash | [กรอกหลัง push] |
+| Commit hash | 1fe2145
+ |
 | Submitted at | 2026-09-17 23:30 |
 | Known limitations / open questions | ประเด็นที่ต้องติดตามต่อก่อนเข้าสู่เฟสการออกแบบ <br>1. ISS-01 ยืนยันสูตรคำนวณเวลารอคิวที่คลาดเคลื่อนไม่เกิน 5 นาที (FR-02) <br>2. ISS-02 ทดสอบความเร็วการแจ้งเตือนภายใน 3 วินาทีภายใต้โหลด 50 Users (FR-05, NFR-01) <br>3. ISS-03 สรุป Privacy Policy และเกณฑ์ Data Retention เรื่องการไม่เก็บข้อมูลแพ้อาหาร (NFR-02), <br>4. ISS-04 ยืนยันรูปแบบรายงานสถิติเพิ่มเติมของผู้ดูแลพื้นที่ (FR-06) และ <br>5. ปรับซิงค์รหัสและสถานะตามรายการ CR-RETRO-01 ถึง CR-RETRO-03 ใน docs/requirements-change-log.md |
 
@@ -64,4 +65,5 @@ Expected paths: `docs/08-validation-traceability.md`, `docs/requirements-change-
 
 | Date | Feedback | Change made | New commit |
 |---|---|---|---|
-| | | | |
+| 2026-09-08 | ตรวจทานความกำกวมของ SRS (DEF-01 ถึง DEF-05) และความครบถ้วนของแผนการตรวจสอบ (VF-01 ถึง VF-05) | ปรับปรุงเนื้อหาตามรายการ REV-01 ถึง REV-05 ใน docs/07-srs-v1.md (Appendix B) และเชื่อมโยง Traceability Matrix | 33f0ea5 |
+|2026-09-17|ตรวจสอบความสอดคล้องของรหัสและสถานะ Requirement ระหว่าง Backlog, SRS และเอกสาร Traceability|บันทึกรายการเปลี่ยนแปลง CR-RETRO-01 ถึง CR-RETRO-03 และประเด็นที่ต้องตามต่อใน docs/requirements-change-log.md|320ed4f|
