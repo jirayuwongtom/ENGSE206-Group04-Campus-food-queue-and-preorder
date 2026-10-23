@@ -9,7 +9,7 @@
 | CR เสริมที่เลือก | CR-FX-02A ใช้งานหน้างาน    |
 | Branch | `final-exam` |
 | Pull Request | `submit(final): change-to-design take-home` |
-| Commit hash สุดท้าย (ก่อน T0 + 24 ชั่วโมง) | |
+| Commit hash สุดท้าย (ก่อน T0 + 24 ชั่วโมง) | 27816db |
 | สถานะ SRS ที่ใช้เป็นฐาน | Baseline Candidate |
 
 ## งานเดิมที่ใช้เป็นฐาน
